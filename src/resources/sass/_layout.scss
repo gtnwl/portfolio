@@ -1,0 +1,53 @@
+.contents.formWrap{
+    padding: 0px !important;
+}
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-height: 500px;
+    min-height: 77px;
+    &+*{
+        border-top: solid 1px $border-color;
+    }
+    .left{
+        padding: 24px 20px;
+        box-sizing: border-box;
+        text-align: left;
+        font-weight: lighter;
+        width: 238px;
+        
+       
+    }
+    .right{
+        padding: 24px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        font-weight: lighter;
+        flex: 1;
+        border-left: solid 1px $border-color;
+        min-height: 77px;
+    }
+    textarea{
+        height: 300px;
+    }
+    .btnBox{
+        border-left: solid 1px $point-color;
+        min-height: 77px;
+        .btn{
+            box-sizing: border-box;
+        }
+    }
+    &.footer{
+        min-height: auto;
+
+        .btnBox{
+            width: 100%;
+            justify-content: space-between;
+            .btn{
+                flex: none;
+                width: 110px;
+            }
+        }
+    }
+}

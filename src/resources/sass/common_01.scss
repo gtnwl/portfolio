@@ -1,0 +1,24 @@
+@charset 'UTF-8';
+@import 'variable','reset','font','component_01','layout','main_01','p01','p03','p04','p05';
+
+
+
+.header_wrap{
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    background: #000;
+   }
+.header_main{
+    height: 91px;
+    margin:0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
