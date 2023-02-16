@@ -53,7 +53,7 @@ function Header() {
       {/*상단영역 시작*/}
       <div class="header_wrap">
         <header class="header_main">
-          <a href="index.html" class="btnBox btnBox_v2">
+          <a href="/portfolio" class="btnBox btnBox_v2">
             <p class="title title_small_v1">WELCOME TO</p>
             <h1 class="title">SUJI’S PORTFOLIO</h1>
             <p class="date title title_small_v2" data-widget="date">
