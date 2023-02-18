@@ -9,26 +9,12 @@
     background-size: 300px 300px;
     background-repeat: repeat;
     border: solid 1px $border-color;
-    margin-top: 20px;
-    margin-bottom: 40px;
   }
-}
-.main {
-  &.mainBg {
-    .index {
-      animation: mainBg 3s;
-
-      &.movePage {
-        animation: movePage 3s;
-      }
-    }
+  &.movePage {
+    animation: movePage 3s;
   }
-}
-.sub {
-  .index {
-    &.subMovePage {
-      animation: subMovePage 3s;
-    }
+  &.subMovePage {
+    animation: subMovePage 3s;
   }
 }
 @keyframes subMovePage {
@@ -63,25 +49,25 @@
     opacity: 1;
   }
 }
-@keyframes mainBg {
-  0% {
-    opacity: 0;
-    transform-origin: center bottom;
-    transform: translate3d(0px, 10vh, 0px) scale(0.95, 0.95);
-    will-change: transform;
-    background: $point-color;
-    transition: background-color 1.5s linear 0s;
-  }
-  100% {
-    transform-origin: center top;
-    transform: translate3d(0px, 0px, 0px) scale(1, 1);
-    will-change: transform;
-    background: #fffcf9 url(../images/bg.jpg);
-    transition: background-color 1.5s linear 0s;
+// @keyframes mainBg {
+//   0% {
+//     opacity: 0;
+//     transform-origin: center bottom;
+//     transform: translate3d(0px, 10vh, 0px) scale(0.95, 0.95);
+//     will-change: transform;
+//     background: $point-color;
+//     transition: background-color 1.5s linear 0s;
+//   }
+//   100% {
+//     transform-origin: center top;
+//     transform: translate3d(0px, 0px, 0px) scale(1, 1);
+//     will-change: transform;
+//     background: #fffcf9 url(../images/bg.jpg);
+//     transition: background-color 1.5s linear 0s;
 
-    opacity: 1;
-  }
-}
+//     opacity: 1;
+//   }
+// }
 .contents {
   &.index {
     padding: 50px 40px;
@@ -114,12 +100,12 @@
     top: 0px;
     &:hover {
       color: $point-color;
-      .hover-indicator {
-        stroke-dashoffset: 0;
-        opacity: 1;
-        transition: stroke-dashoffset 0.4s ease-in, opacity 0s;
-        transition-delay: 0.4s;
-      }
+      // .hover-indicator {
+      //   stroke-dashoffset: 0;
+      //   opacity: 1;
+      //   transition: stroke-dashoffset 0.4s ease-in, opacity 0s;
+      //   transition-delay: 0.4s;
+      // }
     }
     &.active {
       color: #26498d;

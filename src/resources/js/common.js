@@ -12,25 +12,7 @@ export function groupFunction() {
   headerDate();
 
   // slideDown();
-
-  movePage(); //페이지 이동 시 애니메이션
 }
-
-function movePage() {
-  const $btnBox = $(".portfolio .btnBox");
-  const $main = $(".container.mainMovePage");
-  $btnBox.each(function () {
-    var $this = $(this);
-    var data = $this.data("index");
-    $this.on("click", function () {
-      $main.addClass("movePage");
-      setTimeout(function () {
-        window.location.href = "portfolio_" + data + ".html";
-      }, 800);
-    });
-  });
-}
-
 function itemBoxHover() {
   const boxWrap = document.querySelectorAll(".item.item_v1");
   // const hoverBox = documnet.querySelectorAll('.black-image-project-hover')
@@ -103,21 +85,6 @@ function headerDate() {
       "</span>"
   );
 }
-// btn 클릭하면 스클롤 이동
-function fnMove(seq) {
-  var offset = $("#index" + seq).offset();
-  $("html, body").animate({ scrollTop: offset.top }, 400);
-}
-
-// btn 클릭하면 class추가
-$(document).on("click", ".nav .slide", function (e) {
-  e.preventDefault(); // 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드
-  // .siblings() 객체와 동일한 위치에 있는 모든 객체 (자신을 제외한 형제요소)를 검색하는 메소드
-
-  $(".nav .slide").removeClass("active");
-  $(this).addClass("active").siblings().removeClass("active");
-  fnMove($(this).data("n"));
-});
 
 /*스와이퍼 */
 $(function () {

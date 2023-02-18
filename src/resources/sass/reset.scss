@@ -183,20 +183,17 @@ html {
   font-size: 62.5%;
 }
 body {
-  &.main {
-    background: #fffcf9 url(../../resources/images/bg.jpg);
-    background-size: 300px 300px;
-    background-repeat: repeat;
-    line-height: 1.42857143;
-    overflow-x: hidden;
-    max-width: 100vw;
-    font-family: $garamond;
-    font-weight: 400;
-    margin: 0;
-    font-size: 1rem;
-  }
+  background: #fffcf9 url(../../resources/images/bg.jpg);
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  line-height: 1.42857143;
+  overflow-x: hidden;
+  max-width: 100vw;
+  font-family: $garamond;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1rem;
 }
-
 input,
 textarea {
   background: transparent;
