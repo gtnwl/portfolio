@@ -1,7 +1,9 @@
 /* common.js */
 
 import $ from "jquery";
-import { Swiper } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+/*포폴 페이지 접근 시 메뉴 active*/
 
 // const { date } = require("gulp-util")
 export function groupFunction() {
@@ -11,7 +13,12 @@ export function groupFunction() {
   //header 날짜표기
   headerDate();
 
+  activePor();
   // slideDown();
+}
+function activePor() {
+  const contact = document.querySelector("#portfolio");
+  contact.classList.add("active");
 }
 function itemBoxHover() {
   const boxWrap = document.querySelectorAll(".item.item_v1");
@@ -87,18 +94,18 @@ function headerDate() {
 }
 
 /*스와이퍼 */
-$(function () {
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      type: "fraction",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-});
+// $(function () {
+//   var swiper = new Swiper(".mySwiper", {
+//     pagination: {
+//       el: ".swiper-pagination",
+//       type: "fraction",
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
+// });
 
 /* 뒤로가기 히스토리 */
 window.addEventListener("load", () => {

@@ -1,10 +1,43 @@
 import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../resources/sass/common.scss";
 import * as FNC from "../resources/js/common.js";
+import $ from "jquery";
 function INDEX() {
+  let navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     FNC.groupFunction();
-  });
+
+    let path = location.pathname.replace("/", "");
+
+    $("#" + path).addClass("active");
+  }, [location]);
+  const moveSubPage = (page) => {
+    // 이벤트 초기화
+    $(".container.index").removeClass("movePage");
+    $(".container.index").removeClass("subMovePage");
+
+    // 왼쪽에서 오른쪽 이벤트
+    $(".container.index").addClass("movePage");
+
+    setTimeout(function () {
+      // 동그라미 지우기
+      $(".nav .slide").removeClass("active");
+
+      setTimeout(function () {
+        // 동그라미 그리기
+        $("#portfolio").addClass("active");
+
+        // 페이지 이동
+        navigate("/" + page);
+
+        // 오른쪽에서 왼쪽 이벤트
+        $(".container.index").removeClass("movePage");
+        $(".container.index").addClass("subMovePage");
+      }, 600);
+    }, 600);
+  };
 
   return (
     <>
@@ -15,7 +48,11 @@ function INDEX() {
         <h2 className="title sub_title">PROJECTS</h2>
         <div className="itemBox itemBox_v1 pT50 portfolio">
           <div className="item item_v1" data-index="tab-1">
-            <a href="#;" title="" className="btnBox" data-index="01">
+            <button
+              onClick={() => moveSubPage("portfolio01")}
+              className="btnBox"
+              data-index="01"
+            >
               <img
                 src={require("../resources/images/cont/cont_01.svg").default}
                 alt=""
@@ -28,10 +65,14 @@ function INDEX() {
                 <p className="text text_v4">ZIKPAY</p>
                 <p className="text text_v6">#HTML #CSS #JAVASCRIPT #GIT</p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-2">
-            <a href="#;" title="" className="btnBox" data-index="02">
+            <button
+              onClick={() => moveSubPage("portfolio02")}
+              className="btnBox"
+              data-index="02"
+            >
               <img
                 src={require("../resources/images/cont/cont_02.svg").default}
                 alt=""
@@ -46,10 +87,14 @@ function INDEX() {
                   #HTML #SCSS #JAVASCRIPT #SVN #모바일
                 </p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-3">
-            <a href="#;" className="btnBox" data-index="03">
+            <button
+              onClick={() => moveSubPage("portfolio03")}
+              className="btnBox"
+              data-index="03"
+            >
               <img
                 src={require("../resources/images/cont/cont_03.svg").default}
                 alt=""
@@ -64,10 +109,14 @@ function INDEX() {
                   #HTML #SCSS #JAVASCRIPT #SVN #모바일
                 </p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-4">
-            <a href="#;" title="" className="btnBox" data-index="04">
+            <button
+              onClick={() => moveSubPage("portfolio04")}
+              className="btnBox"
+              data-index="04"
+            >
               <img
                 src={require("../resources/images/cont/cont_04.svg").default}
                 alt=""
@@ -82,10 +131,14 @@ function INDEX() {
                   #HTML #SCSS #JAVASCRIPT #SVN #웹표준 #웹접근성
                 </p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-5">
-            <a href="#;" title="" className="btnBox" data-index="05">
+            <button
+              onClick={() => moveSubPage("portfolio05")}
+              className="btnBox"
+              data-index="05"
+            >
               <img
                 src={require("../resources/images/cont/cont_05.svg").default}
                 alt=""
@@ -98,10 +151,14 @@ function INDEX() {
                 <p className="text text_v4">TOBEMALL</p>
                 <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #SVN</p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-6">
-            <a href="#;" title="" className="btnBox" data-index="06">
+            <button
+              onClick={() => moveSubPage("portfolio06")}
+              className="btnBox"
+              data-index="06"
+            >
               <img
                 src={require("../resources/images/cont/cont_06.svg").default}
                 alt=""
@@ -114,10 +171,14 @@ function INDEX() {
                 <p className="text text_v4">BABATHE</p>
                 <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #GIT</p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-7">
-            <a href="#;" title="" className="btnBox" data-index="07">
+            <button
+              onClick={() => moveSubPage("portfolio07")}
+              className="btnBox"
+              data-index="07"
+            >
               <img
                 src={require("../resources/images/cont/cont_07.svg").default}
                 alt=""
@@ -130,10 +191,14 @@ function INDEX() {
                 <p className="text text_v4">INNOCEAN</p>
                 <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #SVN</p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-8">
-            <a href="#;" title="" className="btnBox" data-index="08">
+            <button
+              onClick={() => moveSubPage("portfolio08")}
+              className="btnBox"
+              data-index="08"
+            >
               <img
                 src={require("../resources/images/cont/cont_08.svg").default}
                 alt=""
@@ -146,10 +211,14 @@ function INDEX() {
                 <p className="text text_v4">CATBOX</p>
                 <p className="text text_v6">#HTML #CSS3 #JAVASCRIPT #FIGMA</p>
               </div>
-            </a>
+            </button>
           </div>
           <div className="item item_v1" data-index="tab-9">
-            <a href="#;" title="" className="btnBox" data-index="09">
+            <button
+              onClick={() => moveSubPage("portfolio09")}
+              className="btnBox"
+              data-index="09"
+            >
               <img
                 src={require("../resources/images/cont/cont_09.svg").default}
                 alt=""
@@ -162,7 +231,7 @@ function INDEX() {
                 <p className="text text_v4">BANDI</p>
                 <p className="text text_v6">#HTML #CSS3 #JAVASCRIPT #FIGMA</p>
               </div>
-            </a>
+            </button>
           </div>
         </div>
       </div>
