@@ -11,7 +11,7 @@ function INDEX() {
 
     let path = location.pathname.replace("/", "");
 
-    $("#" + path).addClass("active");
+    //$("#" + path).addClass("active");
   }, [location]);
   const moveSubPage = (page) => {
     // 이벤트 초기화
