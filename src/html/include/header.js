@@ -11,7 +11,7 @@ function Header() {
   useEffect(() => {
     let path = location.pathname.replace("/", "");
 
-    $("#" + path).addClass("active");
+    // $("#" + path).addClass("active");
   }, [location]);
 
   // 페이지 이동 이벤트
