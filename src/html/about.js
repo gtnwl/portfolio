@@ -1,17 +1,18 @@
 import React from "react";
+import { Grid } from "@mui/material";
 import "../resources/sass/common.scss";
 function ABOUT() {
   return (
     <>
-      <div className="contents index" id="index3">
+      <Grid className="contents index aaaaa" id="index3">
         <h2 className="title sub_title">ABOUT ME</h2>
         <div className="textWrap gap30 pT50">
-          <div className="imgBox">
+          {/* <div className="imgBox">
             <img
               src={require("../resources/images/frofile.svg").default}
               alt="내사진"
             />
-          </div>
+          </div> */}
           <div className="textBox gap30">
             <p className="text text_v4">
               '늦었다’고 생각이 들 때가 가장 늦었다. 잠시 쉬어도 좋으니 모든
@@ -36,7 +37,7 @@ function ABOUT() {
             <p className="text text_v4">감사합니다.</p>
           </div>
         </div>
-      </div>
+      </Grid>
     </>
   );
 }
