@@ -9,7 +9,7 @@ function ABOUT() {
           <div className="imgBox">
             <img
               src={require("../resources/images/frofile.svg").default}
-              alt="내사진"
+              alt="내사진2"
             />
           </div>
           <div className="textBox gap30">
