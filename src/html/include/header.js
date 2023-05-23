@@ -43,19 +43,6 @@ function Header() {
 
   return (
     <>
-      {/* 바로가기 메뉴 시작(tap키로 하는 접근성)
-      <ul className="hidden">
-        <li>
-          <a href="#">메뉴바로가기</a>
-        </li>
-        <li>
-          <a href="#">본문바로가기</a>
-        </li>
-        <li>
-          <a href="#">하단바로가기</a>
-        </li>
-      </ul>*/}
-      {/* 바로가기 메뉴 끝*/}
       {/*상단영역 시작*/}
       <div className="header_wrap">
         <header className="header_main">
