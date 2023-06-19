@@ -102,7 +102,8 @@
     text-align: left !important;
   }
   &_v6 {
-    font-size: 14px; //
+    font-size: 14px;
+    line-height: normal;
   }
 }
 .underline {
@@ -125,7 +126,7 @@
     justify-content: center;
   }
   &_v2 {
-    gap: 13px;
+    gap: 20px;
     justify-content: space-between;
   }
 }
@@ -181,6 +182,7 @@
     /*width: 260px;
             height: 295px;*/
     min-height: 295px;
+    min-width: 230px;
     flex: 1;
     box-shadow: 2px 2px 7px 2px RGB(0 0 0 / 50%);
     border-radius: 5px;
@@ -221,7 +223,18 @@ $conts: (zik, tailor, sangjo, copyright, tobe, baba, inno, catbox, bandi);
     background-image: url(../../resources/images/cont/cont_#{$cont}.png);
   }
 }
-$icons: (zik, tailor, sangjo, copyright, tobe, baba, inno, catbox, bandi);
+$icons: (
+  zik,
+  tailor,
+  sangjo,
+  copyright,
+  tobe,
+  baba,
+  inno,
+  catbox,
+  bandi,
+  acsell
+);
 @each $icon in $icons {
   .icon_#{$icon} {
     background-image: url(../../resources/images/icon/icon_#{$icon}.svg);
