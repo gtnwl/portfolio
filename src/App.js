@@ -24,7 +24,7 @@ function App() {
             <div className="container index movePage">
               <Header></Header>
               <Routes>
-                <Route path={"/main"} element={<MAIN />}></Route>
+                <Route path={"/projects"} element={<MAIN />}></Route>
                 <Route path={"/skills"} element={<SKILLS />}></Route>
                 <Route path={"/about"} element={<ABOUT />}></Route>
                 <Route path={"/01"} element={<PORTFOLIO01 />}></Route>
