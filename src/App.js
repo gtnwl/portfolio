@@ -18,7 +18,7 @@ import Footer from "./html/include/footer.js";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolio/">
         <div className="main">
           <div className="wrap flex-fix">
             <div className="container index movePage">
