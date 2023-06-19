@@ -3,7 +3,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "../resources/sass/common.scss";
 import * as FNC from "../resources/js/common.js";
 import $ from "jquery";
-import { Grid, Typography } from "@mui/material";
 function INDEX() {
   let navigate = useNavigate();
   const location = useLocation();
@@ -45,38 +44,9 @@ function INDEX() {
       {/* header */}
       {/*@@include('@@webRoot/html/include/header.html')*/}
       {/* header */}
-      <Grid container id="index1" p={5} justifyContent="center">
-        <Typography
-          component="h2"
-          variant="div"
-          align="center"
-          sx={{ fontSize: "64px" }}
-        >
-          PROJECTS
-        </Typography>
-        <Grid container className="itemBox itemBox_v1 portfolio" sx={{ pt: 5 }}>
-          <div className="item item_v1" data-index="tab-1">
-            <button
-              onClick={() => moveSubPage("portfolio01")}
-              className="btnBox"
-              data-index="01"
-            >
-              <img
-                src={require("../resources/images/cont/cont_10.svg").default}
-                alt=""
-                className="img-responsive"
-              />
-              <i className="icon icon_acsell">
-                <em className="hidden">acSell</em>
-              </i>
-              <div className="textBox">
-                <p className="text text_v4">acSell</p>
-                <p className="text text_v6">
-                  #mfa #api연동(swagger) #React #MUI #AzureDevOps #CSS
-                </p>
-              </div>
-            </button>
-          </div>
+      <div className="contents index" id="index1">
+        <h2 className="title sub_title">PROJECTS</h2>
+        <div className="itemBox itemBox_v1 pT50 portfolio">
           <div className="item item_v1" data-index="tab-1">
             <button
               onClick={() => moveSubPage("portfolio01")}
@@ -263,8 +233,8 @@ function INDEX() {
               </div>
             </button>
           </div>
-        </Grid>
-      </Grid>
+        </div>
+      </div>
     </>
   );
 }
