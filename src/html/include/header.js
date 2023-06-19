@@ -59,7 +59,7 @@ function Header() {
       {/*상단영역 시작*/}
       <div className="header_wrap">
         <header className="header_main">
-          <a href="/portfolio" className="btnBox btnBox_v2">
+          <a href="/portfolio/main" className="btnBox btnBox_v2">
             <p className="title title_small_v1">WELCOME TO</p>
             <h1 className="title">SUJI’S PORTFOLIO</h1>
             <p className="date title title_small_v2" data-widget="date">
@@ -74,7 +74,7 @@ function Header() {
                 <button
                   className="text text_v4Bold btn slide"
                   id="portfolio"
-                  onClick={() => moveMainPage("portfolio")}
+                  onClick={() => moveMainPage("main")}
                 >
                   PROJECTS
                   <span className="hover-indicator">

@@ -24,18 +24,18 @@ function App() {
             <div className="container index movePage">
               <Header></Header>
               <Routes>
-                <Route path={"/portfolio"} element={<MAIN />}></Route>
+                <Route path={"/main"} element={<MAIN />}></Route>
                 <Route path={"/skills"} element={<SKILLS />}></Route>
                 <Route path={"/about"} element={<ABOUT />}></Route>
-                <Route path={"/portfolio01"} element={<PORTFOLIO01 />}></Route>
-                <Route path={"/portfolio02"} element={<PORTFOLIO02 />}></Route>
-                <Route path={"/portfolio03"} element={<PORTFOLIO03 />}></Route>
-                <Route path={"/portfolio04"} element={<PORTFOLIO04 />}></Route>
-                <Route path={"/portfolio05"} element={<PORTFOLIO05 />}></Route>
-                <Route path={"/portfolio06"} element={<PORTFOLIO06 />}></Route>
-                <Route path={"/portfolio07"} element={<PORTFOLIO07 />}></Route>
-                <Route path={"/portfolio08"} element={<PORTFOLIO08 />}></Route>
-                <Route path={"/portfolio09"} element={<PORTFOLIO09 />}></Route>
+                <Route path={"/01"} element={<PORTFOLIO01 />}></Route>
+                <Route path={"/02"} element={<PORTFOLIO02 />}></Route>
+                <Route path={"/03"} element={<PORTFOLIO03 />}></Route>
+                <Route path={"/04"} element={<PORTFOLIO04 />}></Route>
+                <Route path={"/05"} element={<PORTFOLIO05 />}></Route>
+                <Route path={"/06"} element={<PORTFOLIO06 />}></Route>
+                <Route path={"/07"} element={<PORTFOLIO07 />}></Route>
+                <Route path={"/08"} element={<PORTFOLIO08 />}></Route>
+                <Route path={"/09"} element={<PORTFOLIO09 />}></Route>
               </Routes>
               <Footer></Footer>
             </div>

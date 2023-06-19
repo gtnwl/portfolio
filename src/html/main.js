@@ -49,7 +49,7 @@ function INDEX() {
         <div className="itemBox itemBox_v1 pT50 portfolio">
           <div className="item item_v1" data-index="tab-1">
             <button
-              onClick={() => moveSubPage("portfolio01")}
+              onClick={() => moveSubPage("01")}
               className="btnBox"
               data-index="01"
             >
@@ -69,7 +69,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-2">
             <button
-              onClick={() => moveSubPage("portfolio02")}
+              onClick={() => moveSubPage("02")}
               className="btnBox"
               data-index="02"
             >
@@ -91,7 +91,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-3">
             <button
-              onClick={() => moveSubPage("portfolio03")}
+              onClick={() => moveSubPage("03")}
               className="btnBox"
               data-index="03"
             >
@@ -113,7 +113,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-4">
             <button
-              onClick={() => moveSubPage("portfolio04")}
+              onClick={() => moveSubPage("04")}
               className="btnBox"
               data-index="04"
             >
@@ -135,7 +135,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-5">
             <button
-              onClick={() => moveSubPage("portfolio05")}
+              onClick={() => moveSubPage("05")}
               className="btnBox"
               data-index="05"
             >
@@ -155,7 +155,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-6">
             <button
-              onClick={() => moveSubPage("portfolio06")}
+              onClick={() => moveSubPage("06")}
               className="btnBox"
               data-index="06"
             >
@@ -175,7 +175,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-7">
             <button
-              onClick={() => moveSubPage("portfolio07")}
+              onClick={() => moveSubPage("07")}
               className="btnBox"
               data-index="07"
             >
@@ -195,7 +195,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-8">
             <button
-              onClick={() => moveSubPage("portfolio08")}
+              onClick={() => moveSubPage("08")}
               className="btnBox"
               data-index="08"
             >
@@ -215,7 +215,7 @@ function INDEX() {
           </div>
           <div className="item item_v1" data-index="tab-9">
             <button
-              onClick={() => moveSubPage("portfolio09")}
+              onClick={() => moveSubPage("09")}
               className="btnBox"
               data-index="09"
             >
