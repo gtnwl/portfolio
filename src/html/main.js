@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../resources/sass/common.scss";
 import * as FNC from "../resources/js/common.js";
+import { Grid, Typography } from "@mui/material";
 import $ from "jquery";
 function INDEX() {
   let navigate = useNavigate();
@@ -47,6 +48,28 @@ function INDEX() {
       <div className="contents index" id="index1">
         <h2 className="title sub_title">PROJECTS</h2>
         <div className="itemBox itemBox_v1 pT50 portfolio">
+          <div className="item item_v1" data-index="tab-10">
+            <button
+              onClick={() => moveSubPage("10")}
+              className="btnBox"
+              data-index="10"
+            >
+              <img
+                src={require("../resources/images/cont/cont_10.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_acsell">
+                <em className="hidden">acSell</em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">acSell</p>
+                <p className="text text_v6">
+                  #mfa #api연동(swagger) #React #MUI #AzureDevOps #CSS
+                </p>
+              </div>
+            </button>
+          </div>
           <div className="item item_v1" data-index="tab-1">
             <button
               onClick={() => moveSubPage("01")}
