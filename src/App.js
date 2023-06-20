@@ -10,6 +10,7 @@ import PORTFOLIO06 from "./html/portfolio_06.js";
 import PORTFOLIO07 from "./html/portfolio_07.js";
 import PORTFOLIO08 from "./html/portfolio_08.js";
 import PORTFOLIO09 from "./html/portfolio_09.js";
+import PORTFOLIO10 from "./html/portfolio_10.js";
 import "./resources/sass/common.scss";
 import Header from "./html/include/header.js";
 import SKILLS from "./html/skills.js";
@@ -36,6 +37,7 @@ function App() {
                 <Route path={"/07"} element={<PORTFOLIO07 />}></Route>
                 <Route path={"/08"} element={<PORTFOLIO08 />}></Route>
                 <Route path={"/09"} element={<PORTFOLIO09 />}></Route>
+                <Route path={"/10"} element={<PORTFOLIO10 />}></Route>
               </Routes>
               <Footer></Footer>
             </div>
