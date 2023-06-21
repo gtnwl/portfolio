@@ -4,7 +4,7 @@
       "id": "10",
       "name": "acSell",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_acsell.812fffb658427836eae4.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_10.10fd1e44da9646318b5d654556d0ac57.svg",
+      "bgimg": "https://gtnwl.github.io/portfolio/682d8684ea96395c39351adca96501f19c00a0d8/src/resources/images/cont/cont_01.svg",
       "explanation": [
         {
           "title": "acSell",
@@ -16,7 +16,7 @@
       "id": "9",
       "name": "ZIKPAY",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_zik.40a37e5d8a0c0325625d.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_01.4e99f9732fc610795129b6357817fcca.svg",
+      "bgimg": "./resources/images/cont/cont_01.4e99f9732fc610795129b6357817fcca.svg",
       "explanation": [
         {
           "title": "ZIKPAY",
@@ -28,7 +28,7 @@
       "id": "8",
       "name": "TAILORSHIP",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_tailor.e95becb9c7fbc70531d6.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_02.3b64ab3c0a2451af2350dded1f009720.svg",
+      "bgimg": "./resources/images/cont/cont_02.3b64ab3c0a2451af2350dded1f009720.svg",
       "explanation": [
         {
           "title": "TAILORSHIP",
@@ -40,7 +40,7 @@
       "id": "7",
       "name": "전국공무원상조서비스",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_sangjo.6670a3c2626734cbe26e.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_03.a77a74ca4c7f9fea11170994cfb7df8b.svg",
+      "bgimg": "./resources/images/cont/cont_03.a77a74ca4c7f9fea11170994cfb7df8b.svg",
       "explanation": [
         {
           "title": "전국공무원상조서비스",
@@ -52,7 +52,7 @@
       "id": "6",
       "name": "저작권비즈니스지원센터",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_copyright.ed003cbc17a8cb572b41.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_04.d8ba537d5db4e23c73ed57b0e82d1a0c.svg",
+      "bgimg": "./resources/images/cont/cont_04.d8ba537d5db4e23c73ed57b0e82d1a0c.svg",
       "explanation": [
         {
           "title": "저작권비즈니스지원센터",
@@ -64,7 +64,7 @@
       "id": "5",
       "name": "TOBEMALL",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_tobe.da952023e512f68cdb22.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_05.7df4074fbc6c76c37210ccb8e997272e.svg",
+      "bgimg": "./resources/images/cont/cont_05.7df4074fbc6c76c37210ccb8e997272e.svg",
       "explanation": [
         {
           "title": "TOBEMALL",
@@ -76,7 +76,7 @@
       "id": "4",
       "name": "BABATHE",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_baba.d8fb59e770b6d1d7fe38.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_06.d4af48299490baf49f533e23c2b2f067.svg",
+      "bgimg": "./resources/images/cont/cont_06.d4af48299490baf49f533e23c2b2f067.svg",
       "explanation": [
         {
           "title": "BABATHE",
@@ -88,7 +88,7 @@
       "id": "3",
       "name": "INNOCEAN",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_inno.ed01b1047fccb6cf070e.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_07.3fd65220c22074dbff1a53bba8f1990d.svg",
+      "bgimg": "./resources/images/cont/cont_07.3fd65220c22074dbff1a53bba8f1990d.svg",
       "explanation": [
         {
           "title": "INNOCEAN",
@@ -100,7 +100,7 @@
       "id": "2",
       "name": "CATBOX",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_catbox.cd4f32442ff112ab71d4.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_08.3d5945ff79bf05e3615c304348fbc54e.svg",
+      "bgimg": "./resources/images/cont/cont_08.3d5945ff79bf05e3615c304348fbc54e.svg",
       "explanation": [
         {
           "title": "CATBOX",
@@ -112,7 +112,7 @@
       "id": "1",
       "name": "BANDI",
       "logo": "https://gtnwl.github.io/portfolio/static/media/icon_bandi.424a2cb0607a51c038a4.svg",
-      "bgImg": "https://gtnwl.github.io/portfolio/static/media/cont_09.8d9eb9e49a1544847aafbb24ca505195.svg",
+      "bgimg": "./resources/images/cont/cont_09.8d9eb9e49a1544847aafbb24ca505195.svg",
       "explanation": [
         {
           "title": "BANDI",
