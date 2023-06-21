@@ -83,12 +83,6 @@ const INDEX = () => {
                     },
                   }}
                 >
-                  <CardMedia
-                    component="img"
-                    height="237"
-                    image={card.bgImg}
-                    sx={{ opacity: "0.3", filter: "blur(2px)" }}
-                  />
                   <CardMedia component="img" height="253" image={card.logo} />
                   {card.explanation.map((item) => {
                     return (
