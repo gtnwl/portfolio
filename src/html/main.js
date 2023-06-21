@@ -1,29 +1,20 @@
-import React, { useEffect, useCallback, useBoolean, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../resources/sass/common.scss";
 import * as FNC from "../resources/js/common.js";
-import mainData from "./mainData.json";
+import data from "./mainData.json";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-// import { useBoolean, useLocale } from "Lib/hooks";
 import $ from "jquery";
 const INDEX = () => {
   let navigate = useNavigate();
   const location = useLocation();
-  const projectsDate = mainData.data;
-  // const showImageModal = useBoolean(false);
-  // const [image, setImage] = useState({ imageUrl: null, title: null });
-  // const handleImageClick = useCallback(
-  //   (image, title) => {
-  //     showImageModal.setTrue();
-  //     setImage({ imageUrl: image, title: title });
-  //   },
-  //   [showImageModal]
-  // );
+  const projectsDate = data;
+
   useEffect(() => {
     FNC.groupFunction();
 
@@ -67,55 +58,214 @@ const INDEX = () => {
           PROJECTS
         </Typography>
         <Grid container justifyContent="center" sx={{ gap: "50px" }}>
-          {projectsDate.map((card) => {
-            const id = card.id;
-            return (
-              <Card key={id} elevation={3}>
-                <CardActionArea
-                  // onClick={handleImageClick}
-                  sx={{
-                    height: "340px",
-                    width: "340px",
-                    overflow: "hidden",
-                    "& > img": {
-                      position: "absolute",
-                      top: "0",
-                    },
-                  }}
-                >
-                  <CardMedia
-                    component="img"
-                    height="237"
-                    image={card.img}
-                    sx={{ opacity: "0.3", filter: "blur(2px)" }}
-                  />
-                  <CardMedia component="img" height="253" image={card.logo} />
-                  {card.explanation.map((item) => {
-                    return (
-                      <CardContent
-                        sx={{
-                          position: "absolute",
-                          bottom: "0",
-                          left: "0",
-                          right: "0",
-                          borderTop: "solid 2px black",
-                          minHeight: "104px",
-                          boxSizing: "border-box",
-                        }}
-                      >
-                        <Typography gutterBottom variant="h5" component="div">
-                          {item.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          {item.skill}
-                        </Typography>
-                      </CardContent>
-                    );
-                  })}
-                </CardActionArea>
-              </Card>
-            );
-          })}
+          <div className="item item_v1" data-index="tab-10">
+            <button
+              onClick={() => moveSubPage("10")}
+              className="btnBox"
+              data-index="10"
+            >
+              <img
+                src={require("../resources/images/cont/cont_10.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_acsell">
+                <em className="hidden">acSell</em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">acSell</p>
+                <p className="text text_v6">
+                  #mfa #api연동(swagger) #React #MUI #AzureDevOps #CSS
+                </p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-1">
+            <button
+              onClick={() => moveSubPage("01")}
+              className="btnBox"
+              data-index="01"
+            >
+              <img
+                src={require("../resources/images/cont/cont_01.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_zik">
+                <em className="hidden">ZIKPAY</em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">ZIKPAY</p>
+                <p className="text text_v6">#HTML #CSS #JAVASCRIPT #GIT</p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-2">
+            <button
+              onClick={() => moveSubPage("02")}
+              className="btnBox"
+              data-index="02"
+            >
+              <img
+                src={require("../resources/images/cont/cont_02.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_tailor">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">TAILORSHIP</p>
+                <p className="text text_v6">
+                  #HTML #SCSS #JAVASCRIPT #SVN #모바일
+                </p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-3">
+            <button
+              onClick={() => moveSubPage("03")}
+              className="btnBox"
+              data-index="03"
+            >
+              <img
+                src={require("../resources/images/cont/cont_03.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_sangjo">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">전국공무원상조서비스</p>
+                <p className="text text_v6">
+                  #HTML #SCSS #JAVASCRIPT #SVN #모바일
+                </p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-4">
+            <button
+              onClick={() => moveSubPage("04")}
+              className="btnBox"
+              data-index="04"
+            >
+              <img
+                src={require("../resources/images/cont/cont_04.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_copyright">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">저작권비즈니스지원센터</p>
+                <p className="text text_v6">
+                  #HTML #SCSS #JAVASCRIPT #SVN #웹표준 #웹접근성
+                </p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-5">
+            <button
+              onClick={() => moveSubPage("05")}
+              className="btnBox"
+              data-index="05"
+            >
+              <img
+                src={require("../resources/images/cont/cont_05.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_tobe">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">TOBEMALL</p>
+                <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #SVN</p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-6">
+            <button
+              onClick={() => moveSubPage("06")}
+              className="btnBox"
+              data-index="06"
+            >
+              <img
+                src={require("../resources/images/cont/cont_06.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_baba">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">BABATHE</p>
+                <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #GIT</p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-7">
+            <button
+              onClick={() => moveSubPage("07")}
+              className="btnBox"
+              data-index="07"
+            >
+              <img
+                src={require("../resources/images/cont/cont_07.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_inno">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">INNOCEAN</p>
+                <p className="text text_v6">#HTML #SCSS #JAVASCRIPT #SVN</p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-8">
+            <button
+              onClick={() => moveSubPage("08")}
+              className="btnBox"
+              data-index="08"
+            >
+              <img
+                src={require("../resources/images/cont/cont_08.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_catbox">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">CATBOX</p>
+                <p className="text text_v6">#HTML #CSS3 #JAVASCRIPT #FIGMA</p>
+              </div>
+            </button>
+          </div>
+          <div className="item item_v1" data-index="tab-9">
+            <button
+              onClick={() => moveSubPage("09")}
+              className="btnBox"
+              data-index="09"
+            >
+              <img
+                src={require("../resources/images/cont/cont_09.svg").default}
+                alt=""
+                className="img-responsive"
+              />
+              <i className="icon icon_bandi">
+                <em className="hidden"></em>
+              </i>
+              <div className="textBox">
+                <p className="text text_v4">BANDI</p>
+                <p className="text text_v6">#HTML #CSS3 #JAVASCRIPT #FIGMA</p>
+              </div>
+            </button>
+          </div>
         </Grid>
       </Grid>
     </>
