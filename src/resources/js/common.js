@@ -286,7 +286,6 @@ var ui = {
           $header_p05.removeClass("fixed");
         }
       }
-      console.log(scrollTop);
       $header_p05.css({
         "margin-left": -scrollLeft,
       });
@@ -391,8 +390,6 @@ var ui = {
       ui.popup.open($msgBox, popOpen, param);
     },
     open: function (target, popOpen, param) {
-      console.log("팝업열기 : " + target || target.selector);
-
       var _this = this,
         $layerW = $(target),
         $layer = $(".layerPopup_p04, .fullPopup", $layerW),
@@ -422,7 +419,6 @@ var ui = {
         .off("click")
         .on("click", function () {
           if (callback) {
-            console.log("callback함수 실행");
             window[callback](target, popOpen, param);
           } else {
             _this.close(target, popOpen);
@@ -442,7 +438,6 @@ var ui = {
       $layer
         .off("focus")
         .on("focus", function () {
-          //console.log('focus');
           $(".tmpAppend", $layer).remove();
           $(document).on("keydown", function (e) {
             if (e.keyCode == 9 && e.shiftKey) {
@@ -466,7 +461,6 @@ var ui = {
       return false;
     },
     close: function (target, popOpen) {
-      console.log("팝업닫기 : " + target || target.selector);
       var _this = this,
         $layerW = $(target),
         view = $layerW.data("view");
@@ -527,7 +521,6 @@ var ui = {
         $(this)
           .height(1)
           .height($(this).prop("scrollHeight") + 3);
-        console.log($(this).prop("scrollHeight"));
       });
   },
 };

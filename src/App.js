@@ -1,16 +1,16 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MAIN from "./html/main.js";
-import PORTFOLIO01 from "./html/portfolio_01.js";
-import PORTFOLIO02 from "./html/portfolio_02.js";
-import PORTFOLIO03 from "./html/portfolio_03.js";
-import PORTFOLIO04 from "./html/portfolio_04.js";
-import PORTFOLIO05 from "./html/portfolio_05.js";
-import PORTFOLIO06 from "./html/portfolio_06.js";
-import PORTFOLIO07 from "./html/portfolio_07.js";
-import PORTFOLIO08 from "./html/portfolio_08.js";
-import PORTFOLIO09 from "./html/portfolio_09.js";
-import PORTFOLIO10 from "./html/portfolio_10.js";
+import Acsell from "./html/projects/acsell/Acsell.js";
+import Zikpay from "./html/projects/zikpay/Zikpay.js";
+import Tailorship from "./html/projects/tailorship/Tailorship.js";
+import Sangjo from "./html/projects/sangjo/Sangjo.js";
+import Copyright from "./html/projects/copyright/Copyright.js";
+import Tobemall from "./html/projects/tobemall/Tobemall.js";
+import Babathe from "./html/projects/babathe/Babathe.js";
+import Innocean from "./html/projects/innocean/Innocean.js";
+import Catbox from "./html/projects/catbox/Catbox.js";
+import Bandi from "./html/projects/bandi/Bandi.js";
 import "./resources/sass/common.scss";
 import Header from "./html/include/header.js";
 import SKILLS from "./html/skills.js";
@@ -28,16 +28,16 @@ function App() {
                 <Route path={"/projects"} element={<MAIN />}></Route>
                 <Route path={"/skills"} element={<SKILLS />}></Route>
                 <Route path={"/about"} element={<ABOUT />}></Route>
-                <Route path={"/01"} element={<PORTFOLIO01 />}></Route>
-                <Route path={"/02"} element={<PORTFOLIO02 />}></Route>
-                <Route path={"/03"} element={<PORTFOLIO03 />}></Route>
-                <Route path={"/04"} element={<PORTFOLIO04 />}></Route>
-                <Route path={"/05"} element={<PORTFOLIO05 />}></Route>
-                <Route path={"/06"} element={<PORTFOLIO06 />}></Route>
-                <Route path={"/07"} element={<PORTFOLIO07 />}></Route>
-                <Route path={"/08"} element={<PORTFOLIO08 />}></Route>
-                <Route path={"/09"} element={<PORTFOLIO09 />}></Route>
-                <Route path={"/10"} element={<PORTFOLIO10 />}></Route>
+                <Route path={"/Bandi"} element={<Bandi />}></Route>
+                <Route path={"/Catbox"} element={<Catbox />}></Route>
+                <Route path={"/Innocean"} element={<Innocean />}></Route>
+                <Route path={"/Babathe"} element={<Babathe />}></Route>
+                <Route path={"/Tobemall"} element={<Tobemall />}></Route>
+                <Route path={"/Copyright"} element={<Copyright />}></Route>
+                <Route path={"/Sangjo"} element={<Sangjo />}></Route>
+                <Route path={"/Tailorship"} element={<Tailorship />}></Route>
+                <Route path={"/Zikpay"} element={<Zikpay />}></Route>
+                <Route path={"/Acsell"} element={<Acsell />}></Route>
               </Routes>
               <Footer></Footer>
             </div>
