@@ -1,10 +1,9 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import { Button, Typography } from "@mui/material";
-import mainData from "../../mainData.json";
+import Typography from "@mui/material/Typography";
+import ImageSlider from "../../components/layout/ImageSlider";
+import { LinkButton } from "../../components/button";
 const Tailorship = () => {
-  const projectsData = mainData.data;
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -22,8 +21,11 @@ const Tailorship = () => {
             작업 기간 : 22.08.25 - 22.09.02
           </Typography>
         </Grid>
-        {/* <Button variant="outlined">이전</Button>
-        <Button variant="outlined">다음</Button> */}
+        <ImageSlider />
+        <LinkButton
+          to="http://gtnwl.dothome.co.kr/suji_porl/html/p05.html"
+          text="Go to TAILORSHIP"
+        />
       </Grid>
     </>
   );

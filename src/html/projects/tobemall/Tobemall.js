@@ -1,11 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import mainData from "../../mainData.json";
+import ImageSlider from "../../components/layout/ImageSlider";
+import { LinkButton } from "../../components/button";
 
 const Tobemall = () => {
-  const projectsData = mainData.data;
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -23,6 +22,8 @@ const Tobemall = () => {
             작업 기간 : 22.05.30 - 22.07.05
           </Typography>
         </Grid>
+        <ImageSlider />
+        <LinkButton to="https://tobemall.com/" text="Go to TOBEMALL" />
       </Grid>
     </>
   );

@@ -1,12 +1,9 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import mainData from "../../mainData.json";
+import ImageSlider from "../../components/layout/ImageSlider";
 
 const Acsell = () => {
-  const projectsData = mainData.data;
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -24,6 +21,7 @@ const Acsell = () => {
             작업 기간 : 22.10.27 - 23.01
           </Typography>
         </Grid>
+        <ImageSlider />
       </Grid>
     </>
   );

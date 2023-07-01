@@ -10,7 +10,6 @@ import CardActionArea from "@mui/material/CardActionArea";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 // import { useBoolean, useLocale } from "Lib/hooks";
-import $ from "jquery";
 const INDEX = ({ onClick }) => {
   let navigate = useNavigate();
   const location = useLocation();
@@ -26,9 +25,6 @@ const INDEX = ({ onClick }) => {
 
   return (
     <>
-      {/* header */}
-      {/*@@include('@@webRoot/html/include/header.html')*/}
-      {/* header */}
       <Grid container p={5} sx={{ gap: "50px" }}>
         <Typography component="h2" variant="div" sx={{ fontSize: "64px" }}>
           PROJECTS
@@ -81,6 +77,129 @@ const INDEX = ({ onClick }) => {
             );
           })}
         </Grid>
+        {/* <Grid>
+          <Typography>acsell</Typography>
+          <img
+            src={require("../resources/images/cont/cont_acSell01.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_acSell02.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_acSell03.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_acSell04.png")}
+            alt=""
+          />
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_acSell05.gif")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>zikbank</Typography>
+          <img src={require("../resources/images/cont/cont_zik.png")} alt="" />
+          <img
+            src={require("../resources/images/cont/cont_zik01.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_zik02.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_zik03.png")}
+            alt=""
+          />
+          <img
+            src={require("../resources/images/cont/cont_zik04.png")}
+            alt=""
+          />
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_zik05.gif")}
+            alt=""
+          />
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_zik06.gif")}
+            alt=""
+          />
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_zik07.gif")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>TAILORSHIP</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_tailor.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>전국공무원상조서비스</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_sangjo.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>저작권비즈니스지원센터</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_copyright.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>TOBEMALL</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_tobe.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>BABATHE.COM</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_baba.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>INNOCEAN</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_inno.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>CATBOX</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_catbox.png")}
+            alt=""
+          />
+        </Grid>
+        <Grid>
+          <Typography>BANDI</Typography>
+          <img
+            className="animated"
+            src={require("../resources/images/cont/cont_bandi.png")}
+            alt=""
+          />
+        </Grid> */}
       </Grid>
     </>
   );

@@ -1,11 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import mainData from "../../mainData.json";
+import ImageSlider from "../../components/layout/ImageSlider";
+import { LinkButton } from "../../components/button";
 
 const Babathe = () => {
-  const projectsData = mainData.data;
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -23,6 +22,11 @@ const Babathe = () => {
             작업 기간 : 22.06.14 - 22.06.23
           </Typography>
         </Grid>
+        <ImageSlider />
+        <LinkButton
+          to="https://pc.babathe.com/main?gclid=Cj0KCQjwyOuYBhCGARIsAIdGQRPmSo8bZxYDsuYE5rPiO51JelppTFqU5AqG2at6Es38hK1Zxiilz4EaAkJOEALw_wcB"
+          text="Go to BABATHE.COM"
+        />
       </Grid>
     </>
   );
