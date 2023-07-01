@@ -1,0 +1,12 @@
+.react-swipe-container.carousel {
+  width: calc(100% - 154px);
+  margin: 0px auto;
+}
+.react-swipe-container.carousel > div {
+  width: 100%;
+}
+.react-swipe-container.carousel img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}

@@ -1,18 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import { Button, Typography } from "@mui/material";
-import mainData from "../../mainData.json";
-import { useNavigate } from "react-router-dom";
+import Typography from "@mui/material/Typography";
+import ImageSlider from "../../components/layout/ImageSlider";
+import { LinkButton } from "../../components/button";
 
 const Zikpay = () => {
-  let navigate = useNavigate();
-  const projectsData = mainData.data;
-  debugger;
-  const moveToSubPage = () => {
-    navigate("/" + projectsData);
-    console.log(projectsData);
-  };
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -30,15 +22,15 @@ const Zikpay = () => {
             작업 기간 : 22.10.27 - 23.01
           </Typography>
         </Grid>
-        {/* <Button
-          variant="outlined"
-          onClick={() => {
-            // moveToSubPage(card.localName);
-          }}
-        >
-          이전
-        </Button>
-        <Button variant="outlined">다음</Button> */}
+        <Grid>
+          <Typography component="h6" variant="h6">
+            용역 거래 결제 서비스로, 회원들 간에 결제 계약을 생성하고 결제
+            조건에 따라 안전하게 거래 할 수 있도록 도와주는 서비스입니다.
+          </Typography>
+        </Grid>
+        <ImageSlider />
+
+        <LinkButton to="https://staging.zikpay.com/" text="Go to ZIKPAY" />
       </Grid>
     </>
   );

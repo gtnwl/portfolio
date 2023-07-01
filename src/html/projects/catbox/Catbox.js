@@ -1,11 +1,10 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import mainData from "../../mainData.json";
+import ImageSlider from "../../components/layout/ImageSlider";
+import { LinkButton } from "../../components/button";
 
 const Catbox = () => {
-  const projectsData = mainData.data;
-
   return (
     <>
       <Grid container p={5} id="index1" sx={{ gap: "50px" }}>
@@ -23,6 +22,11 @@ const Catbox = () => {
             작업 기간 : 22.04.15 - 22.04.25
           </Typography>
         </Grid>
+        <ImageSlider />
+        <LinkButton
+          to="http://gtnwl.dothome.co.kr/catbox/index.html"
+          text="Go to CATBOX"
+        />
       </Grid>
     </>
   );
