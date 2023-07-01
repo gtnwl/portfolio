@@ -5,11 +5,11 @@
       "name": "Acsell",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_acSell01.53d5df93d5b440791ece.png",
-          "img2": "https://gtnwl.github.io/portfolio/static/media/cont_acSell02.c6d7d33c7606c8aea0e6.png",
-          "img3": "https://gtnwl.github.io/portfolio/static/media/cont_acSell03.9b6802184ed4d84252e4.png",
-          "img4": "https://gtnwl.github.io/portfolio/static/media/cont_acSell04.54037c16b564891ef3aa.png",
-          "img5": "https://gtnwl.github.io/portfolio/static/media/cont_acSell05.2708bf7f0bce8db7017b.gif"
+          "img1": "cont_acSell01.png",
+          "img3": "cont_acSell03.png",
+          "img4": "cont_acSell04.png",
+          "img2": "cont_acSell02.png",
+          "img5": "cont_acSell05.gif"
         }
       ]
     },
@@ -18,14 +18,14 @@
       "name": "Zikpay",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_zik.c88939bf522ba999c14a.png",
-          "img2": "https://gtnwl.github.io/portfolio/static/media/cont_zik01.45ddaa6c9d809e5374b5.png",
-          "img3": "https://gtnwl.github.io/portfolio/static/media/cont_zik02.3873d276319807cde70c.png",
-          "img4": "https://gtnwl.github.io/portfolio/static/media/cont_zik03.be1cf76c0987c9ff0370.png",
-          "img5": "https://gtnwl.github.io/portfolio/static/media/cont_zik04.a1a214bddbb269d148c4.png",
-          "img6": "https://gtnwl.github.io/portfolio/static/media/cont_zik05.f6163a64713ce440ef98.gif",
-          "img7": "https://gtnwl.github.io/portfolio/static/media/cont_zik06.e305e25f6e572f5fdcb3.gif",
-          "img8": "https://gtnwl.github.io/portfolio/static/media/cont_zik07.728dd1a353803e00613c.gif"
+          "img1": "cont_zik.png",
+          "img2": "cont_zik01.png",
+          "img3": "cont_zik02.png",
+          "img4": "cont_zik03.png",
+          "img5": "cont_zik04.png",
+          "img6": "cont_zik05.gif",
+          "img7": "cont_zik06.gif",
+          "img8": "cont_zik07.gif"
         }
       ]
     },
@@ -34,7 +34,7 @@
       "name": "Tailorship",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_tailor.6b08c0366909c94daac5.png"
+          "img1": "cont_tailor.png"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "name": "Sangjo",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_sangjo.916ce2cf7b8b0da337c8.png"
+          "img1": "cont_sangjo.png"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "name": "Copyright",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_copyright.7587cb917df8c543b8fc.png"
+          "img1": "cont_copyright.png"
         }
       ]
     },
@@ -61,7 +61,7 @@
       "name": "Tobemall",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_tobe.e20b786869ec7f26a479.png"
+          "img1": "cont_tobe.png"
         }
       ]
     },
@@ -70,7 +70,7 @@
       "name": "Babathe",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_baba.4e6ffec7f3a17257bcb1.png"
+          "img1": "cont_baba.png"
         }
       ]
     },
@@ -79,7 +79,7 @@
       "name": "Innocean",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_inno.a55ef3dfe71cc7b1d432.png"
+          "img1": "cont_inno.png"
         }
       ]
     },
@@ -88,7 +88,7 @@
       "name": "Catbox",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_catbox.9ed1c62b7b1095dff9c1.png"
+          "img1": "cont_catbox.png"
         }
       ]
     },
@@ -97,7 +97,7 @@
       "name": "Bandi",
       "imgs": [
         {
-          "img1": "https://gtnwl.github.io/portfolio/static/media/cont_bandi.0352b3f645169a1b4def.png"
+          "img1": "cont_bandi.png"
         }
       ]
     }

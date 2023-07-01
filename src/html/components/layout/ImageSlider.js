@@ -69,7 +69,12 @@ const ImageSlider = ({ startIndex, props: MediaProps }) => {
               return imgItemArray.map((item) => {
                 return (
                   <div key={item}>
-                    <img src={item} alt="" />
+                    <img
+                      // src={`https://gtnwl.github.io/portfolio/static/media/cont/${item}`}//
+                      src={require("../../../resources/images/cont/" +
+                        `${item}`)}
+                      alt=""
+                    />
                   </div>
                 );
               });
