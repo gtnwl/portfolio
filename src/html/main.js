@@ -1,4 +1,4 @@
-import React, { useEffect, useCallback, useBoolean, useState } from "react";
+import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../resources/sass/common.scss";
 import * as FNC from "../resources/js/common.js";
@@ -9,7 +9,6 @@ import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-// import { useBoolean, useLocale } from "Lib/hooks";
 const INDEX = ({ onClick }) => {
   let navigate = useNavigate();
   const location = useLocation();
@@ -48,7 +47,24 @@ const INDEX = ({ onClick }) => {
                     },
                   }}
                 >
-                  <CardMedia component="img" height="253" image={card.logo} />
+                  <CardMedia
+                    component="img"
+                    height="253"
+                    // eslint-disable-next-line no-useless-concat
+                    image={require("../resources/images/icon/" +
+                      `${card.logo}`)}
+                  />
+                  <CardMedia
+                    component="img"
+                    height="253"
+                    // eslint-disable-next-line no-useless-concat
+                    image={require("../resources/images/cont/" + `${card.bg}`)}
+                    sx={{
+                      filter: "blur(4px)",
+                      backdropFilter: "blur(2px)",
+                      opacity: 0.15,
+                    }}
+                  />
                   {card.explanation.map((item) => {
                     return (
                       <CardContent
@@ -61,6 +77,7 @@ const INDEX = ({ onClick }) => {
                           borderTop: "solid 2px black",
                           minHeight: "104px",
                           boxSizing: "border-box",
+                          background: "#fff",
                         }}
                       >
                         <Typography gutterBottom variant="h5" component="div">
@@ -77,129 +94,6 @@ const INDEX = ({ onClick }) => {
             );
           })}
         </Grid>
-        {/* <Grid>
-          <Typography>acsell</Typography>
-          <img
-            src={require("../resources/images/cont/cont_acSell01.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_acSell02.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_acSell03.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_acSell04.png")}
-            alt=""
-          />
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_acSell05.gif")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>zikbank</Typography>
-          <img src={require("../resources/images/cont/cont_zik.png")} alt="" />
-          <img
-            src={require("../resources/images/cont/cont_zik01.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_zik02.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_zik03.png")}
-            alt=""
-          />
-          <img
-            src={require("../resources/images/cont/cont_zik04.png")}
-            alt=""
-          />
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_zik05.gif")}
-            alt=""
-          />
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_zik06.gif")}
-            alt=""
-          />
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_zik07.gif")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>TAILORSHIP</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_tailor.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>전국공무원상조서비스</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_sangjo.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>저작권비즈니스지원센터</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_copyright.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>TOBEMALL</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_tobe.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>BABATHE.COM</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_baba.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>INNOCEAN</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_inno.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>CATBOX</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_catbox.png")}
-            alt=""
-          />
-        </Grid>
-        <Grid>
-          <Typography>BANDI</Typography>
-          <img
-            className="animated"
-            src={require("../resources/images/cont/cont_bandi.png")}
-            alt=""
-          />
-        </Grid> */}
       </Grid>
     </>
   );
