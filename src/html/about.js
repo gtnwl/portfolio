@@ -2,6 +2,7 @@ import React from "react";
 import "../resources/sass/common.scss";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
+import { Contact } from "./components/contact";
 const ABOUT = () => {
   return (
     <Grid container p={5} sx={{ gap: "50px" }}>
@@ -39,6 +40,7 @@ const ABOUT = () => {
           감사합니다.
         </Typography>
       </Grid>
+      <Contact />
     </Grid>
   );
 };
