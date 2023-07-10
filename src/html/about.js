@@ -3,6 +3,8 @@ import "../resources/sass/common.scss";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Contact } from "./components/contact";
+import { Box, Button } from "@mui/material";
+import { LinkButton } from "./components/button";
 const ABOUT = () => {
   return (
     <Grid container p={5} sx={{ gap: "50px" }}>
@@ -39,6 +41,36 @@ const ABOUT = () => {
         <Typography component="h3" sx={{ fontSize: "18px" }}>
           감사합니다.
         </Typography>
+      </Grid>
+      <Grid
+        sx={{
+          margin: "0 0 0 auto",
+          textAlign: "right",
+          paddingRight: "10px",
+          borderRight: "3px solid rgba(0, 0, 0, 0.42) !important",
+          // "& > * + *": {
+          //   borderTop: "1px solid rgba(0, 0, 0, 0.42) !important",
+          // },
+        }}
+      >
+        <Box>
+          <Typography component="h3" sx={{ fontSize: "18px" }}>
+            Gitgub
+          </Typography>
+          <LinkButton
+            to="https://github.com/gtnwl/portfolio.git"
+            text="https://github.com/gtnwl/portfolio.git"
+          />
+        </Box>
+        <Box>
+          <Typography component="h3" sx={{ fontSize: "18px" }}>
+            Notion
+          </Typography>
+          <LinkButton
+            to="https://www.notion.so/SUJI-NOTION-18711874fbf641a49ad0f13e548bee01"
+            text="https://www.notion.so/SUJI-NOTION"
+          />
+        </Box>
       </Grid>
       <Contact />
     </Grid>
