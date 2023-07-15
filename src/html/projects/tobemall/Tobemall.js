@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import ImageSlider from "../../components/layout/ImageSlider";
 import { LinkButton } from "../../components/button";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Tobemall = () => {
   return (
@@ -22,7 +22,8 @@ const Tobemall = () => {
             작업 기간 : 22.05.30 - 22.07.05
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
+
         <LinkButton to="https://tobemall.com/" text="Go to TOBEMALL" />
       </Grid>
     </>

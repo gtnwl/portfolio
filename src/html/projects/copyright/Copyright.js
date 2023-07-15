@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import ImageSlider from "../../components/layout/ImageSlider";
 import { LinkButton } from "../../components/button";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Copyright = () => {
   return (
@@ -22,7 +22,8 @@ const Copyright = () => {
             작업 기간 : 22.08.01 ~ 22.08.19
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
+
         <LinkButton
           to="http://gtnwl.dothome.co.kr/suji_porl/html/p03_01.html"
           text="Go to COPYRIGHT"

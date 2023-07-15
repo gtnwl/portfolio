@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import ImageSlider from "../../components/layout/ImageSlider";
 import { LinkButton } from "../../components/button";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Catbox = () => {
   return (
@@ -22,7 +22,8 @@ const Catbox = () => {
             작업 기간 : 22.04.15 - 22.04.25
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
+
         <LinkButton
           to="http://gtnwl.dothome.co.kr/catbox/index.html"
           text="Go to CATBOX"
