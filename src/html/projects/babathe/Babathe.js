@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import ImageSlider from "../../components/layout/ImageSlider";
 import { LinkButton } from "../../components/button";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Babathe = () => {
   return (
@@ -22,7 +22,8 @@ const Babathe = () => {
             작업 기간 : 22.06.14 - 22.06.23
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
+
         <LinkButton
           to="https://pc.babathe.com/main?gclid=Cj0KCQjwyOuYBhCGARIsAIdGQRPmSo8bZxYDsuYE5rPiO51JelppTFqU5AqG2at6Es38hK1Zxiilz4EaAkJOEALw_wcB"
           text="Go to BABATHE.COM"

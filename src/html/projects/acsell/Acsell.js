@@ -1,7 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
-import ImageSlider from "../../components/layout/ImageSlider";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Acsell = () => {
   return (
@@ -21,7 +21,7 @@ const Acsell = () => {
             작업 기간 : 22.10.27 - 23.01
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
       </Grid>
     </>
   );

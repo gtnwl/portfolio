@@ -1,8 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
-import ImageSlider from "../../components/layout/ImageSlider";
 import { LinkButton } from "../../components/button";
+import CompanyDescription from "../../components/layout/CompanyDescription";
 
 const Bandi = () => {
   return (
@@ -22,7 +22,8 @@ const Bandi = () => {
             작업 기간 : 22.06.14 - 22.06.23
           </Typography>
         </Grid>
-        <ImageSlider />
+        <CompanyDescription />
+
         <LinkButton
           to="http://gtnwl.dothome.co.kr/bandi/mobile/index.php"
           text="Go to BANDI"
