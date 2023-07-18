@@ -3,6 +3,7 @@
     {
       "index": "1",
       "title": "HTML",
+      "logo": "icon_html.svg",
       "texts": [
         {
           "text1": "웹표준 및 웹접근성을 항상 고려하여 마크업을 작성",
@@ -14,6 +15,7 @@
     {
       "index": "2",
       "title": "CSS",
+      "logo": "icon_css.svg",
       "texts": [
         {
           "text1": "브라우저 호환성을 고려한 코딩 가능(반응형)",
@@ -25,6 +27,7 @@
     {
       "index": "3",
       "title": "JAVASCRIT & JQUERY",
+      "logo": "icon_scriptJquery.svg",
       "texts": [
         {
           "text1": "JavaScript와 jQuery의 기본 구조를 이해하며 활용 가능",
@@ -35,9 +38,20 @@
     {
       "index": "4",
       "title": "FIGMA",
+      "logo": "icon_figma.svg",
       "texts": [
         {
           "text1": "디자이너와 협력하여 툴 사용 가능"
+        }
+      ]
+    },
+    {
+      "index": "5",
+      "title": "Material-UI",
+      "logo": "icon_mui.svg",
+      "texts": [
+        {
+          "text1": "프로젝트에 맞게 커스터마이징 가능"
         }
       ]
     }
