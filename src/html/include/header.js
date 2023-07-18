@@ -148,6 +148,31 @@ function Header() {
                   </span>
                 </button>
               </li>
+              <li>
+                <button
+                  className="text text_v4Bold btn slide"
+                  id="noticeBoard"
+                  onClick={() => moveMainPage("noticeBoard")}
+                >
+                  NOTICE BOARD
+                  <span className="hover-indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 414.84 111.47"
+                      className="circle-2"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#26498d"
+                        strokeMiterlimit="10"
+                        strokeWidth="25px"
+                        className="hover-path"
+                        d="M180.35,13.55c34.13-1.2,68.69-2.81,102.4,4.3,16.68,3.52,34,8,42.07,24.47,6.87,14.12.21,30.15-13.29,37-14.74,7.47-31.66,8.88-47.81,10.7-37.22,4.19-74.64,6.71-112.06,8.23-26.8,1.09-53.5,1-80.27-.54q-13.88-.54-27.64-2.36a52.37,52.37,0,0,1-16.92-3.74,26.59,26.59,0,0,1-13.5-18.42c-1.42-6.8-1.45-11.7,3.62-16.94,10.74-11.1,28.44-15.61,42.88-20.07a334.43,334.43,0,0,1,58.34-10q39.16-5.09,78.66-6.47c49.34-2.31,98.76-1.35,148.06,1.27,19.22,1,38.35,2.18,57.45,4.55"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </li>
             </ul>
           </nav>
         </header>

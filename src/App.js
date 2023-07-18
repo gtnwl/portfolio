@@ -16,6 +16,7 @@ import Header from "./html/include/header.js";
 import SKILLS from "./html/skills.js";
 import ABOUT from "./html/about.js";
 import Footer from "./html/include/footer.js";
+import NoticeBoard from "./html/NoticeBoard.js";
 function App() {
   return (
     <>
@@ -28,6 +29,7 @@ function App() {
                 <Route path={"/projects"} element={<MAIN />}></Route>
                 <Route path={"/skills"} element={<SKILLS />}></Route>
                 <Route path={"/about"} element={<ABOUT />}></Route>
+                <Route path={"/NoticeBoard"} element={<NoticeBoard />}></Route>
                 <Route path={"/Bandi"} element={<Bandi />}></Route>
                 <Route path={"/Catbox"} element={<Catbox />}></Route>
                 <Route path={"/Innocean"} element={<Innocean />}></Route>
