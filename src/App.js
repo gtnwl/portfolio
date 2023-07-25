@@ -19,13 +19,9 @@ import Footer from "./html/include/footer.js";
 import NoticeBoard from "./html/NoticeBoard.js";
 import SwitchButton from "./html/components/button/SwitchButton.js";
 import { GlobalStyle } from "./theme/GlobalStyle.js";
-import { theme } from "./theme/theme.js";
-import { ThemeProvider, useTheme } from "./context/themeProvider.js";
-import { createTheme } from "@mui/material";
+import { ThemeProvider } from "./context/themeProvider.js";
 
-const App = ({ toggle, mode }) => {
-  const [ThemeMode, toggleTheme] = useTheme();
-
+const App = () => {
   return (
     <>
       <BrowserRouter basename="/portfolio/">
@@ -34,7 +30,7 @@ const App = ({ toggle, mode }) => {
           <div className="main">
             <div className="wrap flex-fix">
               <div className="container index movePage">
-                <SwitchButton toggle={toggleTheme} mode={ThemeMode} />
+                <SwitchButton />
                 <Header></Header>
 
                 <Routes>

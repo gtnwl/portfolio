@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import { FormGroup, createTheme } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import { useTheme } from "../../../context/themeProvider";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -53,17 +54,18 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 //일반함수로 쓰면 export를 동시에 할 수있음
 //화살표함수로 쓸려면 const로 선언 해준 후 맨 아래에다 export default해줘야함.
-const SwitchButton = ({ toggle, mode }) => {
+const SwitchButton = () => {
+  const [ThemeMode, toggleTheme] = useTheme();
   return (
     <FormGroup>
       <FormControlLabel
         control={
           <MaterialUISwitch
-            onClick={toggle}
-            mode={mode}
+            onClick={toggleTheme}
+            mode={ThemeMode}
             defaultChecked
             sx={{ m: 1 }}
-          ></MaterialUISwitch>
+          />
         }
       />
     </FormGroup>
