@@ -1,18 +1,30 @@
 // 전역으로 사용할 기본 스타일
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-
 export const GlobalStyle = createGlobalStyle`
 ${reset}
   body{
+    
+    background:url(${(props) => props.theme.bg});
+    background-size:'cover';
     color: ${(props) => props.theme.defaultColor};
-    background-color: ${(props) => props.theme.bgColor};
     line-height: 1.42857143;
     overflow-x: hidden;
     max-width: 100vw;
     font-weight: 400;
     margin: 0;
     font-size: 1rem;
+    font-family:
+      "Montserrat",
+      "Helvetica Neue",
+      "NanumSquare",
+      "Noto Sans",
+      "Noto Sans CJK KR",
+      sans-serif;
+  }
+  *,*:hover,*::before,*::after,*:hover label{
+    color: ${(props) => props.theme.defaultColor} !important;
+    border-color:${(props) => props.theme.defaultColor} !important; 
   }
 body,
 div,

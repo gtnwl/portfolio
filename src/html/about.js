@@ -47,10 +47,7 @@ const ABOUT = () => {
           margin: "0 0 0 auto",
           textAlign: "right",
           paddingRight: "10px",
-          borderRight: "3px solid rgba(0, 0, 0, 0.42) !important",
-          // "& > * + *": {
-          //   borderTop: "1px solid rgba(0, 0, 0, 0.42) !important",
-          // },
+          borderRight: "3px solid !important",
         }}
       >
         <Box>

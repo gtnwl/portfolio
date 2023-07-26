@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { styled } from "@mui/material/styles";
-import { FormGroup, createTheme } from "@mui/material";
+import { FormGroup } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import { useTheme } from "../../../context/themeProvider";
@@ -63,7 +63,6 @@ const SwitchButton = () => {
           <MaterialUISwitch
             onClick={toggleTheme}
             mode={ThemeMode}
-            defaultChecked
             sx={{ m: 1 }}
           />
         }
