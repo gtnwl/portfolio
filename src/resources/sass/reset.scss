@@ -1,10 +1,8 @@
 @charset "UTF-8";
 @import "./mixin.scss", "./font.scss", "./variable.scss";
-body {
-  background: #fffcf9 url(../../resources/images/bg.jpg);
-  background-size: 300px 300px;
-  background-repeat: repeat;
-}
+// body {
+//   background-size: cover;
+// }
 // body,
 // div,
 // p,

@@ -3,14 +3,11 @@ import "../resources/sass/common.scss";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Contact } from "./components/contact";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material/Box";
 import { LinkButton } from "./components/button";
 const ABOUT = () => {
   return (
     <Grid container p={5} sx={{ gap: "50px" }}>
-      <Typography component="h2" variant="div" sx={{ fontSize: "64px" }}>
-        ABOUT ME
-      </Typography>
       <Grid container sx={{ gap: "20px" }}>
         <Typography component="h3" sx={{ fontSize: "18px" }}>
           '늦었다’고 생각이 들 때가 가장 늦었다. 잠시 쉬어도 좋으니 모든 순간을
@@ -47,10 +44,7 @@ const ABOUT = () => {
           margin: "0 0 0 auto",
           textAlign: "right",
           paddingRight: "10px",
-          borderRight: "3px solid rgba(0, 0, 0, 0.42) !important",
-          // "& > * + *": {
-          //   borderTop: "1px solid rgba(0, 0, 0, 0.42) !important",
-          // },
+          borderRight: "3px solid !important",
         }}
       >
         <Box>

@@ -18,7 +18,6 @@ export const FormContainer = styled.form`
 export const StyledLabel = styled(Grid)`
   &:hover {
     & label {
-      color: rgba(0, 0, 0, 0.87) !important;
       font-weight: bold;
     }
   }
@@ -33,11 +32,11 @@ export const StyledTextarea = styled(TextareaAutosize)`
   line-height: 1.5;
   padding: 12px;
   border-radius: 4px !important;
-  border: 1px solid rgba(0, 0, 0, 0.42) !important;
+  border: 1px solid !important;
   box-sizing: border-box;
 
   &:hover {
-    border: 2px solid rgba(0, 0, 0, 0.87) !important;
+    border: 2px solid !important;
   }
 
   &:focus {

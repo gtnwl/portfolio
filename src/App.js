@@ -1,5 +1,5 @@
-import React, { useCallback, useState } from "react";
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MAIN from "./html/main.js";
 import Acsell from "./html/projects/acsell/Acsell.js";
 import Zikpay from "./html/projects/zikpay/Zikpay.js";
@@ -27,10 +27,10 @@ const App = () => {
       <BrowserRouter basename="/portfolio/">
         <ThemeProvider>
           <GlobalStyle />
+          <SwitchButton />
           <div className="main">
             <div className="wrap flex-fix">
               <div className="container index movePage">
-                <SwitchButton />
                 <Header></Header>
 
                 <Routes>
