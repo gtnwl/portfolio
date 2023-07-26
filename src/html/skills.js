@@ -18,9 +18,6 @@ const SKILLS = () => {
         flexDirection="column"
         sx={{ display: "flex", gap: "50px" }}
       >
-        <Typography component="h2" variant="div" sx={{ fontSize: "64px" }}>
-          SKILLS
-        </Typography>
         <Grid container justifyContent="center" sx={{ gap: "20px" }}>
           {skillData.map((card) => {
             const id = card.index;

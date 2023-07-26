@@ -25,9 +25,6 @@ const INDEX = ({ onClick }) => {
   return (
     <>
       <Grid container p={5} sx={{ gap: "50px" }}>
-        <Typography component="h2" variant="div" sx={{ fontSize: "64px" }}>
-          PROJECTS
-        </Typography>
         <Grid container justifyContent="center" sx={{ gap: "50px" }}>
           {projectsData.map((card) => {
             const id = card.index;

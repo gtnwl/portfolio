@@ -59,8 +59,13 @@ const BoardForm = () => {
         <Button onClick={onClick} variant="outlined">
           작성
         </Button>
+
+        {textList.length > 0 && (
+          <Grid container sx={{ border: "solid 1px red" }}>
+            {textList}
+          </Grid>
+        )}
       </Grid>
-      <Grid container>{textList}</Grid>
     </Grid>
   );
 };

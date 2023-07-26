@@ -26,6 +26,9 @@ ${reset}
     color: ${(props) => props.theme.defaultColor} !important;
     border-color:${(props) => props.theme.defaultColor} !important; 
   }
+  .container {
+    background-color:${(props) => props.theme.bgColor} !important;
+  }
 body,
 div,
 p,
