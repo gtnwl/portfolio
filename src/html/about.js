@@ -3,7 +3,7 @@ import "../resources/sass/common.scss";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { Contact } from "./components/contact";
-import { Box } from "@mui/material/Box";
+import Box from "@mui/material/Box";
 import { LinkButton } from "./components/button";
 const ABOUT = () => {
   return (
