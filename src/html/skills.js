@@ -29,7 +29,11 @@ const SKILLS = () => {
                     variant="b"
                     component="h3"
                     pb={1}
-                    sx={{ fontSize: "22px" }}
+                    sx={{
+                      fontSize: "22px",
+                      color: "#000 !important",
+                      "&:hover": { color: "#000 !important" },
+                    }}
                   >
                     {card.title}
                   </Typography>
@@ -38,7 +42,11 @@ const SKILLS = () => {
                       <Typography
                         pt={1}
                         key={item}
-                        sx={{ fontSize: "1.12rem" }}
+                        sx={{
+                          fontSize: "1.12rem",
+                          color: "#000 !important",
+                          "&:hover": { color: "#000 !important" },
+                        }}
                       >
                         {item}
                       </Typography>

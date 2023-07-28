@@ -15,9 +15,15 @@ const BoardForm = () => {
   const textList = texts.map((item) => (
     <Grid
       container
+      justifyContent="space-between"
       alignItems="center"
       key={item.id}
       onClick={() => onRemove(item.id)}
+      sx={{
+        "& + *": {
+          borderTop: "dotted 1px",
+        },
+      }}
     >
       <Typography>{item.text}</Typography>
       <Button onClick={() => onRemove(item.id)}>삭제</Button>
@@ -56,12 +62,19 @@ const BoardForm = () => {
           onChange={onChange}
         />
 
-        <Button onClick={onClick} variant="outlined">
+        <Button onClick={onClick} variant="outlined" sx={{ height: "45px" }}>
           작성
         </Button>
 
         {textList.length > 0 && (
-          <Grid container sx={{ border: "solid 1px red" }}>
+          <Grid
+            container
+            sx={{
+              border: "solid 1px red",
+              padding: "10px",
+              boxSizing: "border-box",
+            }}
+          >
             {textList}
           </Grid>
         )}

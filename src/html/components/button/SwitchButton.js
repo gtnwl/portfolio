@@ -13,6 +13,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   right: "0",
   bottom: "10px",
   overflow: "inherit",
+  zIndex: "999",
   "& .MuiSwitch-switchBase": {
     margin: 1,
     padding: 0,

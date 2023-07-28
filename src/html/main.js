@@ -77,10 +77,25 @@ const INDEX = ({ onClick }) => {
                           background: "#fff",
                         }}
                       >
-                        <Typography gutterBottom variant="h5" component="div">
+                        <Typography
+                          gutterBottom
+                          variant="h5"
+                          component="div"
+                          sx={{
+                            color: "#000 !important",
+                            "&:hover": { color: "#000 !important" },
+                          }}
+                        >
                           {item.title}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary">
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          sx={{
+                            color: "#000 !important",
+                            "&:hover": { color: "#000 !important" },
+                          }}
+                        >
                           {item.skill}
                         </Typography>
                       </CardContent>

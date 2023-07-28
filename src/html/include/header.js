@@ -5,7 +5,7 @@ import $ from "jquery";
 import { useTheme } from "../../context/themeProvider";
 
 function Header() {
-  const [ThemeMode] = useTheme();
+  const [ThemeMode, toggleTheme] = useTheme();
 
   let navigate = useNavigate();
   const location = useLocation();
@@ -91,8 +91,8 @@ function Header() {
                         fill="none"
                         stroke={
                           ThemeMode === "dark"
-                            ? "rgba(0, 0, 0, 1)"
-                            : "rgba(38, 73, 141, 1)"
+                            ? "rgba(233,233,233, 1)"
+                            : "rgba(0,0,0, 1)"
                         }
                         strokeMiterlimit="10"
                         strokeWidth="15px"
@@ -119,8 +119,8 @@ function Header() {
                         fill="none"
                         stroke={
                           ThemeMode === "dark"
-                            ? "rgba(0, 0, 0, 1)"
-                            : "rgba(38, 73, 141, 1)"
+                            ? "rgba(233,233,233, 1)"
+                            : "rgba(0,0,0, 1)"
                         }
                         strokeMiterlimit="10"
                         strokeWidth="30px"
@@ -151,8 +151,8 @@ function Header() {
                         fill="none"
                         stroke={
                           ThemeMode === "dark"
-                            ? "rgba(0, 0, 0, 1)"
-                            : "rgba(38, 73, 141, 1)"
+                            ? "rgba(233,233,233, 1)"
+                            : "rgba(0,0,0, 1)"
                         }
                         strokeMiterlimit="10"
                         strokeWidth="25px"
@@ -180,8 +180,8 @@ function Header() {
                         fill="none"
                         stroke={
                           ThemeMode === "dark"
-                            ? "rgba(0, 0, 0, 1)"
-                            : "rgba(38, 73, 141, 1)"
+                            ? "rgba(233,233,233, 1)"
+                            : "rgba(0,0,0, 1)"
                         }
                         strokeMiterlimit="10"
                         strokeWidth="25px"

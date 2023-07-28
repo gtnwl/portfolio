@@ -29,6 +29,14 @@ ${reset}
   .container {
     background-color:${(props) => props.theme.bgColor} !important;
   }
+  .swal2-icon.swal2-warning,.swal2-icon.swal2-warning > *{
+    border-color: #facea8 !important;
+    color: #f8bb86 !important;
+    margin:0px auto
+  }
+  .swal2-title{
+    color:#545454 !important
+  }
 body,
 div,
 p,
