@@ -61,7 +61,7 @@ const ABOUT = () => {
             Notion
           </Typography>
           <LinkButton
-            to="https://www.notion.so/SUJI-NOTION-18711874fbf641a49ad0f13e548bee01"
+            to="https://unequaled-apogee-7cd.notion.site/SUJI-NOTION-18711874fbf641a49ad0f13e548bee01?pvs=4"
             text="https://www.notion.so/SUJI-NOTION"
           />
         </Box>
