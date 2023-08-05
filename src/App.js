@@ -17,6 +17,7 @@ import SKILLS from "./html/skills.js";
 import ABOUT from "./html/about.js";
 import Footer from "./html/include/footer.js";
 import NoticeBoard from "./html/NoticeBoard.js";
+import MiniProjects from "./html/MiniProjects.js";
 import SwitchButton from "./html/components/button/SwitchButton.js";
 import { GlobalStyle } from "./theme/GlobalStyle.js";
 import { ThemeProvider } from "./context/themeProvider.js";
@@ -31,26 +32,24 @@ const App = () => {
           <div className="main">
             <div className="wrap flex-fix">
               <div className="container index movePage">
-                <Header></Header>
+                <Header />
 
                 <Routes>
-                  <Route path={"/projects"} element={<MAIN />}></Route>
-                  <Route path={"/skills"} element={<SKILLS />}></Route>
-                  <Route path={"/about"} element={<ABOUT />}></Route>
-                  <Route
-                    path={"/NoticeBoard"}
-                    element={<NoticeBoard />}
-                  ></Route>
-                  <Route path={"/Bandi"} element={<Bandi />}></Route>
-                  <Route path={"/Catbox"} element={<Catbox />}></Route>
-                  <Route path={"/Innocean"} element={<Innocean />}></Route>
-                  <Route path={"/Babathe"} element={<Babathe />}></Route>
-                  <Route path={"/Tobemall"} element={<Tobemall />}></Route>
-                  <Route path={"/Copyright"} element={<Copyright />}></Route>
-                  <Route path={"/Sangjo"} element={<Sangjo />}></Route>
-                  <Route path={"/Tailorship"} element={<Tailorship />}></Route>
-                  <Route path={"/Zikpay"} element={<Zikpay />}></Route>
-                  <Route path={"/Acsell"} element={<Acsell />}></Route>
+                  <Route path={"/projects"} element={<MAIN />} />
+                  <Route path={"/skills"} element={<SKILLS />} />
+                  <Route path={"/about"} element={<ABOUT />} />
+                  <Route path={"/NoticeBoard"} element={<NoticeBoard />} />
+                  <Route path={"/MiniProjects"} element={<MiniProjects />} />
+                  <Route path={"/Bandi"} element={<Bandi />} />
+                  <Route path={"/Catbox"} element={<Catbox />} />
+                  <Route path={"/Innocean"} element={<Innocean />} />
+                  <Route path={"/Babathe"} element={<Babathe />} />
+                  <Route path={"/Tobemall"} element={<Tobemall />} />
+                  <Route path={"/Copyright"} element={<Copyright />} />
+                  <Route path={"/Sangjo"} element={<Sangjo />} />
+                  <Route path={"/Tailorship"} element={<Tailorship />} />
+                  <Route path={"/Zikpay"} element={<Zikpay />} />
+                  <Route path={"/Acsell"} element={<Acsell />} />
                 </Routes>
                 <Footer />
               </div>
