@@ -5,12 +5,14 @@ export const darkTheme = {
   pointColor: "#fff",
   bgColor: "rgba(73, 73, 73,0.8)",
   borderColor: "1px solid #fff",
+  modalColor: "rgba(73, 73, 73,1)",
   bg: darkImg,
 };
 export const lightTheme = {
   defaultColor: "#000",
   pointColor: "#26498d",
   bgColor: "rgba(191, 171, 136,0.8)",
+  modalColor: "rgba(191, 171, 136,1)",
   borderColor: "1px solid #231f20",
   bg: lightImg,
 };

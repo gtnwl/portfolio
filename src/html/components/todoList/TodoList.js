@@ -1,12 +1,27 @@
 import React from "react";
-import { Grid } from "@mui/material";
+import { Grid, List } from "@mui/material";
 import TodoListItem from "./TodoListItem";
 
 //입력 된 리스트를 감싼는 영역
-const TodoList = ({ todos }) => {
+const TodoList = ({ todos, index, onRemove, onToggle }) => {
   return (
-    <Grid>
-      <TodoListItem todos={todos} />
+    <Grid
+      sx={{
+        overflow: "auto",
+        width: "100%",
+        padding: "65px 20px 20px 20px",
+      }}
+    >
+      <List>
+        {todos.map((todo) => (
+          <TodoListItem
+            todo={todo}
+            key={todo.index}
+            onRemove={onRemove}
+            onToggle={onToggle}
+          />
+        ))}
+      </List>
     </Grid>
   );
 };
