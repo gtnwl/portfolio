@@ -7,23 +7,41 @@ import contentData from "./todoContent.json";
 const TodoForm = () => {
   const todoData = contentData.data;
   const [todos, setTodos] = useState(todoData);
-  const nextId = useRef(3);
-  const onInsert = useCallback(
-    (content) => {
-      const todo = {
-        id: nextId.current,
-        content,
-        checkBox: false,
-      };
-      setTodos(todos.concat(todo));
-      nextId.current++;
+
+  const nextIndex = useRef(3);
+  const onInsert = useCallback((content) => {
+    const todo = {
+      index: nextIndex.current,
+      content,
+      checkBox: false,
+    };
+
+    if (content === "") {
+      alert("글을 작성해주세요.");
+      return;
+    }
+    setTodos((todos) => todos.concat(todo));
+    nextIndex.current++;
+  }, []);
+  const onRemove = useCallback((index) => {
+    setTodos((todos) => todos.filter((todo) => todo.index !== index));
+  }, []);
+
+  const onToggle = useCallback(
+    (index) => {
+      setTodos(
+        todos.map((todo) =>
+          todo.index === index ? { ...todo, checkBox: !todo.checkBox } : todo
+        )
+      );
     },
     [todos]
   );
+
   return (
-    <Grid container>
-      <TodoInsert onInsert={onInsert} todos={todos} />
-      <TodoList todos={todos} />
+    <Grid container sx={{ overflow: "auto", maxHeight: "500px" }}>
+      <TodoInsert onInsert={onInsert} />
+      <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
     </Grid>
   );
 };

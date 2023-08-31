@@ -37,6 +37,9 @@ ${reset}
   .swal2-title{
     color:#545454 !important
   }
+  .modalBg,.modalHeader{
+    background-color:${(props) => props.theme.modalColor}
+  }
 body,
 div,
 p,
