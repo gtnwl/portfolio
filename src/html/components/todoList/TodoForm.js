@@ -3,6 +3,7 @@ import { Grid } from "@mui/material";
 import TodoInsert from "./TodoInsert";
 import TodoList from "./TodoList";
 import contentData from "./todoContent.json";
+import { MyModal } from "../layout";
 //todoList 전체를 감싸는 영역
 const TodoForm = () => {
   const todoData = contentData.data;
@@ -39,7 +40,7 @@ const TodoForm = () => {
   );
 
   return (
-    <Grid container sx={{ overflow: "auto", maxHeight: "500px" }}>
+    <Grid container sx={{ overflow: "auto" }}>
       <TodoInsert onInsert={onInsert} />
       <TodoList todos={todos} onToggle={onToggle} onRemove={onRemove} />
     </Grid>

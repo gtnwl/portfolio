@@ -31,10 +31,8 @@ const TodoInsert = ({ onInsert }) => {
       className="modalHeader"
       sx={{
         gap: "20px",
-        position: "fixed",
-        maxWidth: "500px",
+        position: "sticky",
         zIndex: "999",
-        padding: "20px 20px 0px 20px",
         opacity: 1,
       }}
     >
