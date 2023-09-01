@@ -9,7 +9,7 @@ const TodoList = ({ todos, index, onRemove, onToggle }) => {
       sx={{
         overflow: "auto",
         width: "100%",
-        padding: "65px 20px 20px 20px",
+        maxHeight: "400px",
       }}
     >
       <List>
