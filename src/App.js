@@ -25,13 +25,13 @@ import { ThemeProvider } from "./context/themeProvider.js";
 const App = () => {
   return (
     <>
-      <BrowserRouter basename="/portfolio/">
+      <BrowserRouter basename='/portfolio'>
         <ThemeProvider>
           <GlobalStyle />
           <SwitchButton />
-          <div className="main">
-            <div className="wrap flex-fix">
-              <div className="container index movePage">
+          <div className='main'>
+            <div className='wrap flex-fix'>
+              <div className='container index movePage'>
                 <Header />
 
                 <Routes>
