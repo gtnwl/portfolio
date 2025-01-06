@@ -19,7 +19,7 @@ const Catbox = () => {
             CATBOX
           </Typography>
           <Typography component="h6" variant="h6">
-            작업 기간 : 22.04.15 - 22.04.25
+            작업 기간 : 24.11.29 - 24.12.15
           </Typography>
         </Grid>
         <CompanyDescription />
