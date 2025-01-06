@@ -25,7 +25,7 @@ const Catbox = () => {
         <CompanyDescription />
 
         <LinkButton
-          to="http://gtnwl.dothome.co.kr/catbox/index.html"
+          to="https://cat-box-6b041.web.app/"
           text="Go to CATBOX"
         />
       </Grid>
