@@ -5,17 +5,17 @@
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     background-size: 300px 300px;
     background-repeat: repeat;
-    border: solid 1px $border-color;
+    // border: solid 1px $border-color;
   }
-  &.movePage {
-    animation: movePage 3s;
-  }
-  &.subMovePage {
-    animation: subMovePage 3s;
-  }
+  // &.movePage {
+  //   animation: movePage 3s;
+  // }
+  // &.subMovePage {
+  //   animation: subMovePage 3s;
+  // }
 }
 @keyframes subMovePage {
   0% {
@@ -113,7 +113,7 @@
         stroke-dashoffset: 0;
         opacity: 1;
         transition: stroke-dashoffset 0.4s ease-in, opacity 0s;
-        transition-delay: 0.4s;
+        // transition-delay: 0.4s;
       }
     }
     &.off {
@@ -125,13 +125,13 @@
       stroke-dashoffset: 0;
       opacity: 1;
       transition: stroke-dashoffset 0.4s ease-in, opacity 0s;
-      transition-delay: 0.4s;
+      // transition-delay: 0.4s;
     }
     &:visited {
       stroke-dashoffset: 0;
       opacity: 1;
       transition: stroke-dashoffset 0.4s ease-in, opacity 0s;
-      transition-delay: 0.4s;
+      // transition-delay: 0.4s;
     }
   }
 }

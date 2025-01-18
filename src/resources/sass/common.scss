@@ -9,11 +9,15 @@ a {
 }
 
 .wrap {
+  height: 100vh;
   padding: 20px;
   box-sizing: border-box;
   &.main {
     background: #000;
   }
+}
+.container{
+  overflow-y: auto;
 }
 .hidden {
   width: 1px;

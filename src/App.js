@@ -16,30 +16,20 @@ import Header from "./html/include/header.js";
 import SKILLS from "./html/skills.js";
 import ABOUT from "./html/about.js";
 import Footer from "./html/include/footer.js";
-import NoticeBoard from "./html/NoticeBoard.js";
-import MiniProjects from "./html/MiniProjects.js";
-import SwitchButton from "./html/components/button/SwitchButton.js";
-import { GlobalStyle } from "./theme/GlobalStyle.js";
-import { ThemeProvider } from "./context/themeProvider.js";
-
 const App = () => {
   return (
     <>
       <BrowserRouter basename='/portfolio'>
-        <ThemeProvider>
-          <GlobalStyle />
-          <SwitchButton />
-          <div className='main'>
+          <div className='main' >
             <div className='wrap flex-fix'>
-              <div className='container index movePage'>
+              <div className='container index movePage' style={{
+            borderRadius: '25px'
+          }}>
                 <Header />
-
                 <Routes>
                   <Route path={"/projects"} element={<MAIN />} />
                   <Route path={"/skills"} element={<SKILLS />} />
                   <Route path={"/about"} element={<ABOUT />} />
-                  <Route path={"/NoticeBoard"} element={<NoticeBoard />} />
-                  <Route path={"/MiniProjects"} element={<MiniProjects />} />
                   <Route path={"/Bandi"} element={<Bandi />} />
                   <Route path={"/Catbox"} element={<Catbox />} />
                   <Route path={"/Innocean"} element={<Innocean />} />
@@ -55,7 +45,6 @@ const App = () => {
               </div>
             </div>
           </div>
-        </ThemeProvider>
       </BrowserRouter>
     </>
   );
