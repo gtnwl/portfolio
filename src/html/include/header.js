@@ -8,21 +8,19 @@ function Header() {
   let navigate = useNavigate();
   const location = useLocation();
 
+  const updateCircle = (path) => {
+    $(".nav .slide").removeClass("active");
+    $("#" + path).addClass("active");
+  };
+
   // 현재 주소에 맞게 동그라미 그리기
   useEffect(() => {
     let path = location.pathname.replace("/", "");
-
-    $("#" + path).addClass("active");
+    updateCircle(path)
   }, [location]);
 
   // 페이지 이동 이벤트
   const moveMainPage = (page) => {
-    // 이벤트 초기화
-    $(".container.index").removeClass("movePage");
-    $(".container.index").removeClass("subMovePage");
-
-    // 왼쪽에서 오른쪽 이벤트
-    $(".container.index").addClass("movePage");
 
     setTimeout(function () {
       // 동그라미 지우기
@@ -30,14 +28,9 @@ function Header() {
 
       setTimeout(function () {
         // 동그라미 그리기
-        $("#" + page).addClass("active");
-
+        updateCircle(page)
         // 페이지 이동
         navigate("/" + page);
-
-        // 오른쪽에서 왼쪽 이벤트
-        $(".container.index").removeClass("movePage");
-        $(".container.index").addClass("subMovePage");
       }, 600);
     }, 600);
   };
@@ -61,8 +54,7 @@ function Header() {
       <div className="header_wrap">
         <header className="header_main">
           <a href="/portfolio/projects" className="btnBox btnBox_v2">
-            <p className="title title_small_v1">WELCOME TO</p>
-            <h1 className="title">SUJI’S PORTFOLIO</h1>
+            <h1 className="title">SUJI</h1>
             <p className="date title title_small_v2" data-widget="date">
               <span className="day">Wednesday,</span>
               <span className="month">January 11,</span>

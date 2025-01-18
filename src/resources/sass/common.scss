@@ -118,9 +118,7 @@ a {
   gap: 100px;
 }
 /*상단영역 시작*/
-.header_wrap {
-  border-bottom: solid 1px $border-color;
-}
+ 
 .header_sub {
   border-bottom: 0px;
   padding-top: 50px;
@@ -151,13 +149,11 @@ a {
   display: flex;
   align-items: center;
   li {
-    border-top: solid 1px $border-color;
+    
     flex: 1;
     padding: 15px 0px;
     box-sizing: border-box;
-    + li {
-      border-left: solid 1px $border-color;
-    }
+   
   }
   .text {
     text-align: center;
