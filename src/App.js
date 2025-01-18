@@ -22,9 +22,7 @@ const App = () => {
       <BrowserRouter basename='/portfolio'>
           <div className='main' >
             <div className='wrap flex-fix'>
-              <div className='container index movePage' style={{
-            borderRadius: '25px'
-          }}>
+              <div className='container index movePage'>
                 <Header />
                 <Routes>
                   <Route path={"/projects"} element={<MAIN />} />

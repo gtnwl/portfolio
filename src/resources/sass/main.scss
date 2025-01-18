@@ -1,14 +1,14 @@
 .container {
   &.index {
-    //  padding: 1.5vw;
+    border: solid 15px rgba(175, 48, 25, 1);
+    border-radius: 25px;
+    box-sizing: border-box;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    // overflow: hidden;
     background-size: 300px 300px;
     background-repeat: repeat;
-    // border: solid 1px $border-color;
   }
   // &.movePage {
   //   animation: movePage 3s;
@@ -48,26 +48,7 @@
       rotate-z 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms;
     opacity: 1;
   }
-}
-// @keyframes mainBg {
-//   0% {
-//     opacity: 0;
-//     transform-origin: center bottom;
-//     transform: translate3d(0px, 10vh, 0px) scale(0.95, 0.95);
-//     will-change: transform;
-//     background: $point-color;
-//     transition: background-color 1.5s linear 0s;
-//   }
-//   100% {
-//     transform-origin: center top;
-//     transform: translate3d(0px, 0px, 0px) scale(1, 1);
-//     will-change: transform;
-//     background: #fffcf9 url(../images/bg.jpg);
-//     transition: background-color 1.5s linear 0s;
-
-//     opacity: 1;
-//   }
-// }
+} 
 .contents {
   &.index {
     padding: 50px 40px;
