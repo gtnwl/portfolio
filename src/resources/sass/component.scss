@@ -34,11 +34,11 @@
   }
 }
 .title {
-  font-family: $garamond;
-  font-size: 90px; //90px
-  letter-spacing: 8px;
-  text-align: center;
+  font-family: $agencyFB;
+  color: $point-color;
+  font-size: 60px;
   transition: 0.3s ease;
+  line-height: normal;
 
   &_small_v1 {
     font-size: 32px; //32px
