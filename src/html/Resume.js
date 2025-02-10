@@ -185,7 +185,7 @@ const Resume = () => {
                   </i>
                   React
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="D" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -203,7 +203,7 @@ const Resume = () => {
                   </i>
                   HTML5
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="A" />
               </li>
               <li className=" flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -212,7 +212,7 @@ const Resume = () => {
                   </i>
                   SCSS
                 </p>
-                <BoxContainer type="A" />
+                <BoxContainer type="C" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -230,7 +230,7 @@ const Resume = () => {
                   </i>
                   Swagger
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="B" />
               </li>
             </ul>
             <ul className="right flex-column gap5 flex_1">
@@ -241,7 +241,7 @@ const Resume = () => {
                   </i>
                   Vue
                 </p>
-                <BoxContainer type="A" />
+                <BoxContainer type="C" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -259,7 +259,7 @@ const Resume = () => {
                   </i>
                   CSS
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="A" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -293,7 +293,7 @@ const Resume = () => {
                   </i>
                   Figma
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="B" />
               </li>
             </ul>
             <ul className="right flex-column gap5 flex_1">
@@ -305,7 +305,7 @@ const Resume = () => {
                   </i>
                   Adobe Photoshop
                 </p>
-                <BoxContainer type="A" />
+                <BoxContainer type="D" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -314,7 +314,7 @@ const Resume = () => {
                   </i>
                   Adobe illustrator
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="D" />
               </li>
             </ul>
           </div>
@@ -330,7 +330,7 @@ const Resume = () => {
                   </i>
                   Word
                 </p>
-                <BoxContainer type="C" />
+                <BoxContainer type="B" />
               </li>
               <li className="flex-row space-between align-items-center">
                 <p className="text_v5 flex-row align-items-center ">
@@ -350,7 +350,7 @@ const Resume = () => {
                   </i>
                   Excel
                 </p>
-                <BoxContainer type="A" />
+                <BoxContainer type="C" />
               </li>
             </ul>
           </div>
