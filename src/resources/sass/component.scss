@@ -34,7 +34,7 @@
   }
 }
 .title {
-  font-family: $agencyFB;
+  font-family: $agencyFB !important;
   color: $point-color;
   font-size: 60px;
   transition: 0.3s ease;
@@ -83,8 +83,9 @@
 }
 
 .text {
-  font-family: $notoSans;
   font-size: 24px; //
+  color: black;
+  font-family: $gillsans;
   &_v3 {
     font-size: 22px; //
     display: block;
@@ -94,15 +95,27 @@
   }
   &_v4Bold {
     font-size: 20px; //
-    letter-spacing: -1.2px;
+    letter-spacing: 0.5px;
     font-weight: bold;
   }
   &_v5 {
     font-size: 18px;
     text-align: left !important;
   }
+  &_v5Bold {
+    font-size: 18px;
+    font-weight: bold;
+  }
   &_v6 {
     font-size: 14px;
+    line-height: normal;
+  }
+  &_v6Gray {
+    font-size: 14px;
+    color: $gray-color;
+  }
+  &_v7 {
+    font-size: 12px;
     line-height: normal;
   }
 }
@@ -197,16 +210,19 @@
   }
 }
 .icon {
-  width: 100%;
-  height: 100%;
+  // width: 100%;
+  // height: 100%;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
   display: inline-block;
   background-size: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   text-align: center;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+  // position: absolute;
+  // left: 0px;
+  // top: 0px;
 }
 .cont {
   width: 100%;
@@ -224,24 +240,60 @@ $conts: (zik, tailor, sangjo, copyright, tobe, baba, inno, catbox, bandi);
   }
 }
 $icons: (
-  zik,
-  tailor,
-  sangjo,
-  copyright,
-  tobe,
-  baba,
-  inno,
-  catbox,
-  bandi,
-  acsell
+  ai,
+  atl,
+  axios,
+  bit,
+  css,
+  excel,
+  figma,
+  git,
+  html,
+  jira,
+  js,
+  mui,
+  notion,
+  point,
+  post,
+  ps,
+  react,
+  scss,
+  slack,
+  swagger,
+  ts,
+  vue,
+  word
 );
 @each $icon in $icons {
   .icon_#{$icon} {
-    background-image: url(../../resources/images/icon/icon_#{$icon}.svg);
-    transition: 0.2s ease;
+    background-image: url(../../resources/images/icon/skillsIcon/icon_#{$icon}.svg);
+    // transition: 0.2s ease;
   }
   // .icon_#{$icon}.hover{
   //      backdrop-filter: blur(2px);
   //     filter: blur(4px);
   // }
+}
+
+//네모 도형
+.square-wrap {
+  width: 170px;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+
+  .text_v6Gray {
+    margin-left: 6px;
+  }
+}
+.square-box {
+  width: 10px;
+  height: 10px;
+  box-sizing: border-box;
+}
+.square-full {
+  background-color: #000;
+}
+.square-outline {
+  border: solid 1px #000;
 }

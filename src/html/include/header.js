@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../../resources/sass/common.scss";
-import me from "../../resources/images/icon/icon_me.png";
+// import "../../resources/sass/common.scss";
 import $ from "jquery";
 
 function Header() {
@@ -51,7 +50,7 @@ function Header() {
       {/* 바로가기 메뉴 끝*/}
       {/*상단영역 시작*/}
       <div className="header_wrap">
-        <header className="header_main">
+        <header className="header_main border-center gap40">
           {/* <div className="top">
             <p className="date title title_small_v2" data-widget="date">
               <span className="day">Wednesday,</span>
@@ -78,36 +77,36 @@ function Header() {
           </div>
           <ul className="right">
             <li className="list">
-              <p>ADDRESS.</p>
-              <p>-</p>
+              <p className="title">ADDRESS.</p>
+              <p className="text_v5">75a Ave Langley Twp, Canada 19760</p>
             </li>
             <li className="list">
-              <p>EMAIL.</p>
-              <p>1999ssu@gmail.com</p>
+              <p className="title">EMAIL.</p>
+              <p className="text_v5">1999ssu@gmail.com</p>
             </li>
             <li className="list">
-              <p>TEL.</p>
-              <p></p>
+              <p className="title">TEL(KO).</p>
+              <p className="text_v5">+82 10-3293-1282</p>
             </li>
             <li className="list">
-              <p>TEL.</p>
-              <p></p>
+              <p className="title">TEL(CA).</p>
+              <p className="text_v5">-</p>
             </li>
             <li className="list">
-              <p>VISA TYPE</p>
-              <p></p>
+              <p className="title">VISA TYPE.</p>
+              <p className="text_v5">Working Holiday </p>
             </li>
             <li className="list">
-              <p>VISA DURATION</p>
-              <p></p>
+              <p className="title">VISA DURATION.</p>
+              <p className="text_v5">Feb 26, 2025 – Feb 26, 2027</p>
             </li>
             <li className="list">
-              <p>GIT HUB</p>
-              <p>https://github.com/gtnwl/portfolio</p>
+              <p className="title">GIT HUB.</p>
+              <p className="text_v5">https://github.com/gtnwl/portfolio</p>
             </li>
           </ul>
         </header>
-        <nav className="nav_wrap">
+        {/* <nav className="nav_wrap">
           <ul className="nav">
             <li>
               <button
@@ -188,7 +187,7 @@ function Header() {
               </button>
             </li>
           </ul>
-        </nav>
+        </nav> */}
       </div>
       {/*상단영역 끝*/}
     </>
