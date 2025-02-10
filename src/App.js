@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RESUME from "./html/Resume.js";
+import RESUMEDETIAL from "./html/Resume_detail.js";
 import Acsell from "./html/projects/acsell/Acsell.js";
 import Zikpay from "./html/projects/zikpay/Zikpay.js";
 import Tailorship from "./html/projects/tailorship/Tailorship.js";
@@ -25,8 +26,16 @@ const App = () => {
             <div className="container index movePage">
               <Header />
               <Routes>
-                <Route path={"/projects"} element={<RESUME />} />
-                <Route path={"/skills"} element={<SKILLS />} />
+                <Route
+                  path={"/projects"}
+                  element={
+                    <>
+                      <RESUME />
+                      <RESUMEDETIAL />
+                    </>
+                  }
+                />
+                {/* <Route path={"/skills"} element={<SKILLS />} />
                 <Route path={"/about"} element={<ABOUT />} />
                 <Route path={"/Bandi"} element={<Bandi />} />
                 <Route path={"/Catbox"} element={<Catbox />} />
@@ -37,7 +46,7 @@ const App = () => {
                 <Route path={"/Sangjo"} element={<Sangjo />} />
                 <Route path={"/Tailorship"} element={<Tailorship />} />
                 <Route path={"/Zikpay"} element={<Zikpay />} />
-                <Route path={"/Acsell"} element={<Acsell />} />
+                <Route path={"/Acsell"} element={<Acsell />} /> */}
               </Routes>
               <Footer />
             </div>

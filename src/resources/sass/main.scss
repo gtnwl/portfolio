@@ -13,11 +13,12 @@
   }
 }
 
+.container > * + * {
+  margin-top: 40px;
+}
+
 .contents {
   &.index {
-    padding: 50px 40px;
-    box-sizing: border-box;
-
     + * {
       border-top: solid 1px $border-color;
     }

@@ -86,6 +86,10 @@
   font-size: 24px; //
   color: black;
   font-family: $gillsans;
+  &_point {
+    color: $point-color;
+    font-weight: bold;
+  }
   &_v3 {
     font-size: 22px; //
     display: block;
@@ -107,14 +111,17 @@
     font-weight: bold;
   }
   &_v6 {
+    font-size: 16px;
+  }
+  &_v7 {
     font-size: 14px;
     line-height: normal;
   }
-  &_v6Gray {
+  &_v7Gray {
     font-size: 14px;
     color: $gray-color;
   }
-  &_v7 {
+  &_v8 {
     font-size: 12px;
     line-height: normal;
   }

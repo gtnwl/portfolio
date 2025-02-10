@@ -131,6 +131,12 @@ a {
 .pB50 {
   padding-bottom: 50px;
 }
+.mT10 {
+  margin-top: 10px;
+}
+.mT20 {
+  margin-top: 20px;
+}
 .mT30 {
   margin-top: 30px;
 }
@@ -140,6 +146,9 @@ a {
 }
 .gap10 {
   gap: 10px;
+}
+.gap20 {
+  gap: 20px;
 }
 .gap30 {
   gap: 30px;
@@ -155,10 +164,21 @@ a {
 .textLeft {
   text-align: left;
 }
+.textRight {
+  text-align: right;
+}
+.textCenter {
+  text-align: center;
+}
 .fontSize22 {
   line-height: normal;
   font-size: 22px;
   word-break: break-all !important;
+}
+//grid로 중앙 정렬{
+.gridCenter {
+  display: grid;
+  place-items: center;
 }
 /*상단영역 시작*/
 
@@ -173,7 +193,6 @@ a {
 }
 .header_main {
   display: flex;
-  margin-bottom: 40px;
   align-items: flex-end;
   position: relative;
   // &::after {
@@ -250,7 +269,6 @@ a {
 }
 .contents {
   &.footer {
-    padding: 20px;
     .text {
       text-align: center;
     }
@@ -264,7 +282,8 @@ a {
 .teach,
 .commu,
 .design,
-.oa {
+.oa,
+.card {
   position: relative;
 
   &::after {
@@ -272,9 +291,30 @@ a {
     top: 0px;
   }
 }
-.resume > * {
+.resume > *,
+.resume_detail > * {
   margin-top: 40px;
 }
-.skills > * {
-  margin-top: 20px;
+.language > * {
+  margin-top: 10px;
+}
+
+//resume detail 영역
+.resume_detail {
+  .title {
+    margin-top: 0px;
+  }
+}
+.card {
+  gap: 40px;
+  .left {
+    width: 30%;
+  }
+  .right {
+    width: 70%;
+  }
+
+  &::after {
+    left: calc(30% + 9px);
+  }
 }

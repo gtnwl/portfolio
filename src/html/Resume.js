@@ -32,7 +32,7 @@ const Resume = () => {
         {Array.from({ length: typs.outline }).map((_, i) => (
           <p key={`outline-${i}`} className="square-box square-outline"></p>
         ))}
-        <p className="text_v6Gray">{typs.text}</p>
+        <p className="text_v7Gray">{typs.text}</p>
       </div>
     );
   };
@@ -40,20 +40,20 @@ const Resume = () => {
   return (
     <div className="resume">
       <div className="overview flex-row border-center gap40">
-        <ul className="left flex-column gap5 flex_1">
+        <ul className="left flex-column flex_1">
           <li>
             <p className="title title_small_v1 flex-row space-between align-items-center">
-              EXPERIENCE OVERVIEW <span className="text text_v6">2+ Years</span>
+              EXPERIENCE OVERVIEW <span className="text text_v7">2+ Years</span>
             </p>
           </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v4">
+          <li className="mT10">
+            <p className="flex-row space-between align-items-center text_v5">
               - Cloude Platform Service Inc.
               <span className="text text_v7">South Korea</span>
             </p>
           </li>
           <li>
-            <p className="flex-row space-between align-items-center text_v4">
+            <p className="flex-row space-between align-items-center text_v5">
               - ERP Solution Platform Service Inc.
               <span className="text text_v7">South Korea</span>
             </p>
@@ -109,7 +109,7 @@ const Resume = () => {
           </ul>
         </div>
       </div>
-      <div className="skills ">
+      <div className="skills flex-column gap20">
         <p className="title title_small_v1">SKILLS</p>
         <div className="commu ">
           <p className="text_v4Bold">Communication</p>
