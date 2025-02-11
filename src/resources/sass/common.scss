@@ -309,6 +309,10 @@ a {
   gap: 40px;
   .left {
     width: 30%;
+
+    .title {
+      min-height: 200px;
+    }
   }
   .right {
     width: 70%;

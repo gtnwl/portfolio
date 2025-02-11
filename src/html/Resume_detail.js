@@ -18,8 +18,8 @@ const Resume_detial = () => {
       <p className="title title_small_v1">EXPERIENCE</p>
       <div className="card flex-row border-center">
         <div className="left left flex-column">
-          <i className="icon icon_jira">
-            <em className="hidden">jira</em>
+          <i className="cont cont_oke">
+            <em className="hidden">oke</em>
           </i>
           <p className="title title_small_v1 flex_1 gridCenter textCenter">
             12/2024
@@ -38,7 +38,7 @@ const Resume_detial = () => {
           </div>
           <dl>
             <dt className="text_v4 text_point">Admin Site</dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Developed and implemented volume backup and scheduling features,
               allowing users to restore deleted volumes and schedule backups by
               selecting specific days and times, with options to edit or delete
@@ -52,7 +52,7 @@ const Resume_detial = () => {
             <dt className="text_v4 text_point">
               Hana Bank (Internal System Admin)
             </dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Improved the user interface and resolved issues on existing pages,
               utilizing Chart.js for data visualization, with Vue 3 and
               TypeScript for dynamic and responsive UI development.
@@ -62,7 +62,7 @@ const Resume_detial = () => {
             <dt className="text_v4 text_point">
               Korea Credit Information Services (Internal System Admin)
             </dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Developed new pages with API integrations using Vue 3 and
               TypeScript, implemented CRUD operations via the dashboard, and
               enhanced the UI of existing pages while addressing functionality
@@ -73,8 +73,8 @@ const Resume_detial = () => {
       </div>
       <div className="card flex-row border-center">
         <div className="left left flex-column">
-          <i className="icon icon_jira">
-            <em className="hidden">jira</em>
+          <i className="cont cont_ecre">
+            <em className="hidden">ecre</em>
           </i>
           <p className="title title_small_v1 flex_1 gridCenter textCenter">
             06/2023
@@ -93,7 +93,7 @@ const Resume_detial = () => {
           </div>
           <dl>
             <dt className="text_v4 text_point">Admin Site</dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Worked in a Micro Frontend Architecture (MFA) environment,
               integrating APIs using Swagger and developing frontend UIs for
               React-based projects. Built user interfaces using React and
@@ -107,8 +107,8 @@ const Resume_detial = () => {
       </div>
       <div className="card flex-row border-center">
         <div className="left left flex-column">
-          <i className="icon icon_jira">
-            <em className="hidden">jira</em>
+          <i className="cont cont_zik">
+            <em className="hidden">zik</em>
           </i>
           <p className="title title_small_v1 flex_1 gridCenter textCenter">
             02/2023
@@ -127,7 +127,7 @@ const Resume_detial = () => {
           </div>
           <dl>
             <dt className="text_v4 text_point">Admin Site</dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Responsible for developing admin pages using HTML, CSS,
               JavaScript, and jQuery, and working on publishing development with
               Thymeleaf. Conducted cross-browser testing on Windows and Mac,
@@ -139,8 +139,8 @@ const Resume_detial = () => {
       </div>
       <div className="card flex-row border-center">
         <div className="left left flex-column">
-          <i className="icon icon_jira">
-            <em className="hidden">jira</em>
+          <i className="cont cont_ezen">
+            <em className="hidden">ezen</em>
           </i>
           <p className="title title_small_v1 flex_1 gridCenter textCenter">
             09/2022
@@ -159,7 +159,7 @@ const Resume_detial = () => {
           </div>
           <dl>
             <dt className="text_v4 text_point">Admin Site</dt>
-            <dd className="text_v6">
+            <dd className="text_v5">
               Contributed to SI project development and performed publishing
               work for various project websites. Developed UIs using HTML, CSS,
               and JavaScript, ensuring adherence to web accessibility standards.

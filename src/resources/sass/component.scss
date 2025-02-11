@@ -233,17 +233,17 @@
 }
 .cont {
   width: 100%;
-  height: 100%;
+  height: 45px;
   display: inline-block;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   object-fit: cover;
   text-align: center;
 }
-$conts: (zik, tailor, sangjo, copyright, tobe, baba, inno, catbox, bandi);
+$conts: (oke, ecre, zik, ezen);
 @each $cont in $conts {
   .cont_#{$cont} {
-    background-image: url(../../resources/images/cont/cont_#{$cont}.png);
+    background-image: url(../../resources/images/icon/skillsIcon/cont_#{$cont}.svg);
   }
 }
 $icons: (
