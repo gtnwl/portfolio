@@ -82,7 +82,11 @@ function Header() {
             </li>
             <li className="list">
               <p className="title">EMAIL.</p>
-              <p className="text_v5">1999ssu@gmail.com</p>
+              <p className="text_v5">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1999ssu@gmail.com">
+                  1999ssu@gmail.com
+                </a>
+              </p>
             </li>
             <li className="list">
               <p className="title">TEL(KO).</p>
@@ -98,11 +102,23 @@ function Header() {
             </li>
             <li className="list">
               <p className="title">VISA DURATION.</p>
-              <p className="text_v5">Feb 26, 2025 – Feb 26, 2027</p>
+              <p className="text_v5">Feb 26, 2025 – Feb 25, 2027</p>
             </li>
             <li className="list">
               <p className="title">GIT HUB.</p>
-              <p className="text_v5">https://github.com/gtnwl/portfolio</p>
+              <p className="text_v5">
+                <a href="https://github.com/gtnwl/portfolio">
+                  https://github.com/gtnwl/portfolio
+                </a>
+              </p>
+            </li>
+            <li className="list">
+              <p className="title">PORTFOLIO.</p>
+              <p className="text_v5">
+                <a href="https://cat-box-6b041.web.app/">
+                  https://cat-box-6b041.web.app/
+                </a>
+              </p>
             </li>
           </ul>
         </header>

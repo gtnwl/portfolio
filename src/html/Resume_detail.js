@@ -99,8 +99,10 @@ const Resume_detial = () => {
               React-based projects. Built user interfaces using React and
               JavaScript, with the MUI Component Library and Bootstrap for UI
               components. Managed branches and code using Git with Azure DevOps
-              and contributed to the site launch of
-              https://cbec.acsell.ai/signin.
+              and contributed to the site launch of&nbsp;
+              <a href="https://cbec.acsell.ai/signin.">
+                https://cbec.acsell.ai/signin.
+              </a>
             </dd>
           </dl>
         </div>
@@ -132,7 +134,8 @@ const Resume_detial = () => {
               JavaScript, and jQuery, and working on publishing development with
               Thymeleaf. Conducted cross-browser testing on Windows and Mac,
               managed branches and code using Git, including GitLab, and
-              contributed to the site launch of https://zikpay.com/.
+              contributed to the site launch of&nbsp;
+              <a href="https://zikpay.com/">https://zikpay.com/.</a>
             </dd>
           </dl>
         </div>
