@@ -1,18 +1,8 @@
-import React, { useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React from "react";
 import "../resources/sass/common.scss";
 import "../resources/sass/component.scss";
 // import * as FNC from "../resources/js/common.js";
-import mainData from "./mainData.json";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import CardActionArea from "@mui/material/CardActionArea";
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 const Resume_detial = () => {
-  let navigate = useNavigate();
-
   return (
     <div className="resume_detail flex-column">
       <p className="title title_small_v1">EXPERIENCE</p>
