@@ -16,5 +16,3 @@
 ### 협업 툴
 <img alt="azuredevops" src ="https://img.shields.io/badge/azuredevops-0078D7.svg?&style=flat&logo=azuredevops&logoColor=white"/> <img alt="github" src ="https://img.shields.io/badge/github-181717.svg?&style=flat&logo=github&logoColor=white"/> <img alt="gitlab" src ="https://img.shields.io/badge/gitlab-FC6D26.svg?&style=flat&logo=gitlab&logoColor=white"/> <img alt="slack" src ="https://img.shields.io/badge/slack-4A154B.svg?&style=flat&logo=slack&logoColor=white"/> <img alt="Notion" src ="https://img.shields.io/badge/Notion-000000.svg?&style=flat&logo=Notion&logoColor=white"/> 
 
-### 참고 사이트
-> [다크모드] <https://velog.io/@gparkkii/reactdarkmode>
