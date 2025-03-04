@@ -78,7 +78,7 @@ function Header() {
           <ul className="right">
             <li className="list">
               <p className="title">ADDRESS.</p>
-              <p className="text_v5">75a Ave Langley Twp, Canada 19760</p>
+              <p className="text_v5">99 wheat boom drive Oakville, L6H 0M9</p>
             </li>
             <li className="list">
               <p className="title">EMAIL.</p>
@@ -89,12 +89,8 @@ function Header() {
               </p>
             </li>
             <li className="list">
-              <p className="title">TEL(KO).</p>
-              <p className="text_v5">+82 10-3293-1282</p>
-            </li>
-            <li className="list">
-              <p className="title">TEL(CA).</p>
-              <p className="text_v5">-</p>
+              <p className="title">TEL.</p>
+              <p className="text_v5">(778) 714-1282</p>
             </li>
             <li className="list">
               <p className="title">VISA TYPE.</p>
