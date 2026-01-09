@@ -119,8 +119,7 @@
     font-size: 14px;
     line-height: normal;
   }
-  &_v7Gray {
-    font-size: 14px;
+  &_gray {
     color: $gray-color;
   }
   &_v8 {
@@ -292,18 +291,14 @@ $icons: (
 
 //네모 도형
 .square-wrap {
-  width: 170px;
+  width: 220px;
   display: flex;
   gap: 2px;
   align-items: center;
-
-  .text_v6Gray {
-    margin-left: 6px;
-  }
 }
 .square-box {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   box-sizing: border-box;
 }
 .square-full {

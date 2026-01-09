@@ -32,7 +32,7 @@ const Resume = () => {
         {Array.from({ length: typs.outline }).map((_, i) => (
           <p key={`outline-${i}`} className="square-box square-outline"></p>
         ))}
-        <p className="text_v7Gray">{typs.text}</p>
+        <p className="text text_v4 text_gray pL10">{typs.text}</p>
       </div>
     );
   };
@@ -58,13 +58,13 @@ const Resume = () => {
         <div className="flex-row gap40">
           <ul className="left flex-column gap5 flex_1">
             <li className="flex-row space-between align-items-center">
-              <p className="text_v5">Korean</p>
+              <p className="text">Korean</p>
               <BoxContainer type="A" />
             </li>
           </ul>
           <ul className="right flex-column gap5 flex_1">
             <li className="flex-row space-between align-items-center">
-              <p className="text_v5">English</p>
+              <p className="text">English</p>
               <BoxContainer type="D" />
             </li>
           </ul>
