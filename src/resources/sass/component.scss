@@ -68,7 +68,7 @@
   }
 }
 .sub_title {
-  font-size: 64px;
+  font-size: 35px;
 }
 .textWrap {
   display: flex;
@@ -90,7 +90,6 @@
   color: black;
   font-family: $gillsans;
   &_point {
-    color: $point-color;
     font-weight: bold;
   }
   &_v3 {
@@ -127,6 +126,12 @@
   &_v8 {
     font-size: 12px;
     line-height: normal;
+  }
+  &_heightNormal {
+    line-height: normal;
+  }
+  &_spacingNormal {
+    letter-spacing: normal;
   }
 }
 .underline {

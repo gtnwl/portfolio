@@ -180,6 +180,9 @@ a {
 .textCenter {
   text-align: center;
 }
+.fontItalic {
+  font-style: italic;
+}
 .fontSize22 {
   line-height: normal;
   font-size: 22px;
@@ -194,6 +197,9 @@ a {
 //border
 .bB {
   border-bottom: solid 1px black;
+}
+.bBBold {
+  border-width: 3px;
 }
 /*상단영역 시작*/
 

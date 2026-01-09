@@ -18,7 +18,6 @@ const App = () => {
                   element={
                     <>
                       <RESUME />
-                      <RESUMEDETIAL />
                     </>
                   }
                 />

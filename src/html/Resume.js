@@ -39,62 +39,23 @@ const Resume = () => {
 
   return (
     <div className="resume">
-      <div className="overview flex-row border-center gap40">
-        <ul className="left flex-column flex_1">
-          <li>
-            <p className="title title_small_v1 flex-row space-between align-items-center">
-              EXPERIENCE OVERVIEW <span className="text text_v7">2+ Years</span>
-            </p>
-          </li>
-          <li className="mT10">
-            <p className="flex-row space-between align-items-center text_v5">
-              - Cloude Platform Service Inc.
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - ERP Solution Platform Service Inc.
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - Secure Payment Solution Platform Service Inc.
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - SI Inc. <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-        </ul>
-        <ul className="right flex-column gap5 flex_1 ">
-          <li className="title title_small_v1"> EDUCATION OVERVIEW</li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - Frontend Development (React, JavaScript)
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - UI/UX Responsive Web Publisher
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-          <li>
-            <p className="flex-row space-between align-items-center text_v5">
-              - Full Stack Java Web Developer
-              <span className="text text_v7">South Korea</span>
-            </p>
-          </li>
-        </ul>
+      <div className="flex-column">
+        <h3 className="sub_title bB bBBold">SUMMARY</h3>
+        <p className="text">
+          Frontend Developer with over 2 years of experience specializing in
+          building admin dashboards and UI components for SaaS, ERP, and
+          financial platforms using{" "}
+          <span className="text text_point">Vue.js, React, TypeScript</span>,
+          and <span className="text text_point">JavaScript</span>. Strong
+          foundation in web publishing and responsive UI/UX design. Skilled in
+          API integration, testing, and collaborating in Agile environments
+          using <span className="text text_point">Git, Postman, Swagger</span>,
+          and <span className="text text_point">Figma</span>.
+        </p>
       </div>
-      <div className="language ">
-        <p className="title title_small_v1">LANGUAGE</p>
-        <div className="flex-row border-center gap40">
+      <div>
+        <h3 className="sub_title bB bBBold">LANGUAGE</h3>
+        <div className="flex-row gap40">
           <ul className="left flex-column gap5 flex_1">
             <li className="flex-row space-between align-items-center">
               <p className="text_v5">Korean</p>
@@ -109,250 +70,205 @@ const Resume = () => {
           </ul>
         </div>
       </div>
-      <div className="skills flex-column gap20">
-        <p className="title title_small_v1">SKILLS</p>
-        <div className="commu ">
-          <p className="text_v4Bold">Communication</p>
-          <div className="flex-row border-center gap40">
-            <ul className="left flex-column gap5 flex_1">
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_notion">
-                    <em className="hidden">notion</em>
-                  </i>
-                  Notion
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_atl">
-                    <em className="hidden">atl</em>
-                  </i>
-                  Atlassian
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_git">
-                    <em className="hidden">git</em>
-                  </i>
-                  Github
-                </p>
-                <BoxContainer type="C" />
-              </li>
-            </ul>
-            <ul className="right flex-column gap5 flex_1">
-              <li className=" flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_slack">
-                    <em className="hidden">slack</em>
-                  </i>
-                  Slack
-                </p>
-                <BoxContainer type="A" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_jira">
-                    <em className="hidden">jira</em>
-                  </i>
-                  Jira
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_bit">
-                    <em className="hidden">bit</em>
-                  </i>
-                  Bitbucket
-                </p>
-                <BoxContainer type="C" />
-              </li>
-            </ul>
+      <div className="flex-column">
+        <h3 className="sub_title bB bBBold">SKILLS</h3>
+        <div className="text">
+          <p className="text text_point">[Frontend]</p>
+          <p>
+            <span className="text text_point">Vue.js, React.js</span>,
+            JavaScript, TypeScript, HTML5, CSS3, SCSS, jQuery, Material-UI
+            (MUI), Bootstrap
+          </p>
+        </div>
+        <div className="text">
+          <p className="text text_point">[API & Tools]</p>
+          <p>
+            <span className="text text_point">Swagger, Postman</span>, Axios,
+            RESTful API, SheetJS, Git, GitLab, Bitbucket, Azure DevOps, SVN
+          </p>
+        </div>
+        <div className="text">
+          <p className="text text_point">[Design]</p>
+          <p>
+            <span className="text text_point">Figma</span>, Adobe Photoshop,
+            Adobe Illustrator
+          </p>
+        </div>
+        <div className="text">
+          <p className="text text_point">[Collaboration]</p>
+          <p>Jira, Slack, Notion, Confluence, Atlassian</p>
+        </div>
+        <div className="text">
+          <p className="text text_point">[Others]</p>
+          <p>Excel, PowerPoint, Word</p>
+        </div>
+      </div>
+      <div className="flex-column">
+        <h3 className="sub_title bB bBBold">EXPERIENCE</h3>
+        <div className="pT20">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">
+              [OKESTRO Inc. (Cloud Platform Service)]
+            </p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row ">
+            <p className="flex_1 text flex-column">
+              Frontend Developer (Junior)
+              <span className="fontItalic">09/2023 - 12/2024</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal text_spacingNormal">
+              <span className="text text_point">
+                Designed and implemented volume backup/schedule features
+              </span>{" "}
+              on an admin dashboard using{" "}
+              <span className="text text_point">Vue 3</span> and{" "}
+              <span className="text text_point">TypeScript</span>, enhancing
+              user control over deleted volume restoration and backup
+              scheduling. Enabled Excel data export with{" "}
+              <span className="text text_point">SheetJS</span>, allowing full
+              resource data export.{" "}
+              <span className="text text_point">
+                Improved internal system UIs
+              </span>{" "}
+              for <span className="text text_point">Hana Bank</span> and{" "}
+              <span className="text text_point">
+                Korea Credit Information Services
+              </span>
+              , implemented <span className="text text_point">Chart.js</span>{" "}
+              visualizations and full{" "}
+              <span className="text text_point">CRUD dashboards</span>,
+              increasing internal workflow efficiency.
+            </p>
           </div>
         </div>
-        <div className="teach ">
-          <p className="text_v4Bold">Teach Stack</p>
-          <div className="flex-row border-center gap40">
-            <ul className="left flex-column gap5 flex_1">
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_react">
-                    <em className="hidden">react</em>
-                  </i>
-                  React
-                </p>
-                <BoxContainer type="D" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_js">
-                    <em className="hidden">js</em>
-                  </i>
-                  JavaScript
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_html">
-                    <em className="hidden">html</em>
-                  </i>
-                  HTML5
-                </p>
-                <BoxContainer type="A" />
-              </li>
-              <li className=" flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_scss">
-                    <em className="hidden">scss</em>
-                  </i>
-                  SCSS
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_axios">
-                    <em className="hidden">axios</em>
-                  </i>
-                  Axios
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_swagger">
-                    <em className="hidden">swagger</em>
-                  </i>
-                  Swagger
-                </p>
-                <BoxContainer type="B" />
-              </li>
-            </ul>
-            <ul className="right flex-column gap5 flex_1">
-              <li className=" flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_vue">
-                    <em className="hidden">vue</em>
-                  </i>
-                  Vue
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_ts">
-                    <em className="hidden">ts</em>
-                  </i>
-                  TypeScript
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_css">
-                    <em className="hidden">css</em>
-                  </i>
-                  CSS
-                </p>
-                <BoxContainer type="A" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_mui">
-                    <em className="hidden">mui</em>
-                  </i>
-                  Material-UI(MUI)
-                </p>
-                <BoxContainer type="C" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_post">
-                    <em className="hidden">post</em>
-                  </i>
-                  Postman
-                </p>
-                <BoxContainer type="C" />
-              </li>
-            </ul>
+        <div className="pT50">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">
+              [ECREMMOCE Inc. (ERP Solution Platform)]
+            </p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row">
+            <p className="flex_1 text flex-column">
+              Frontend Developer (Junior)
+              <span className="fontItalic">03/2023 - 06/2023</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Developed React-based admin UI in a{" "}
+              <span className="text text_point">
+                Micro Frontend Architecture (MFA)
+              </span>{" "}
+              environment using{" "}
+              <span className="text text_point">Swagger, MUI</span>, and{" "}
+              <span className="text text_point">Bootstrap</span>. Contributed to
+              the launch of cbec.acsell.ai, integrating APIs and managing
+              deployment via Azure DevOps.
+            </p>
           </div>
         </div>
-        <div className="design ">
-          <div className="flex-row border-center gap40">
-            <ul className="left flex-column gap5 flex_1">
-              <li className="text_v4Bold">Design - UI/UX</li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_figma">
-                    <em className="hidden">figma</em>
-                  </i>
-                  Figma
-                </p>
-                <BoxContainer type="B" />
-              </li>
-            </ul>
-            <ul className="right flex-column gap5 flex_1">
-              <li className="text_v4Bold">Design -Graphic</li>
-              <li className=" flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_ps">
-                    <em className="hidden">ps</em>
-                  </i>
-                  Adobe Photoshop
-                </p>
-                <BoxContainer type="D" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_ai">
-                    <em className="hidden">ai</em>
-                  </i>
-                  Adobe illustrator
-                </p>
-                <BoxContainer type="D" />
-              </li>
-            </ul>
+        <div className="pT50">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">
+              [ZIKPAY Inc. (Secure Payment Platform)]
+            </p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row">
+            <p className="flex_1 text flex-column">
+              Web Publisher
+              <span className="fontItalic">10/2022 - 02/2023</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Developed admin UI with{" "}
+              <span className="text text_point">HTML/CSS/JS/jQuery</span>,
+              worked with <span className="text text_point">Thymeleaf</span>
+              for templating. Performed{" "}
+              <span className="text text_point">cross-browser testing</span> and
+              Git-based branch management. Participated in launching zikpay.com.
+            </p>
           </div>
         </div>
-        <div className="oa ">
-          <p className="text_v4Bold">OA</p>
-          <div className="flex-row border-center gap40">
-            <ul className="left flex-column gap5 flex_1">
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_word">
-                    <em className="hidden">word</em>
-                  </i>
-                  Word
-                </p>
-                <BoxContainer type="B" />
-              </li>
-              <li className="flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_point">
-                    <em className="hidden">point</em>
-                  </i>
-                  Power Point
-                </p>
-                <BoxContainer type="C" />
-              </li>
-            </ul>
-            <ul className="right flex-column gap5 flex_1">
-              <li className=" flex-row space-between align-items-center">
-                <p className="text_v5 flex-row align-items-center ">
-                  <i className="icon icon_excel">
-                    <em className="hidden">excel</em>
-                  </i>
-                  Excel
-                </p>
-                <BoxContainer type="C" />
-              </li>
-            </ul>
+        <div className="pT50">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">[EZEN Inc. (SI Projects)]</p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row">
+            <p className="flex_1 text flex-column">
+              Web Publisher
+              <span className="fontItalic">05/2022 - 09/2022</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Created responsive, accessible websites using{" "}
+              <span className="text text_point">HTML, CSS, JavaScript</span>,
+              and <span className="text text_point">SCSS</span>. Managed styles
+              with <span className="text text_point">Gulp</span>, version
+              control with <span className="text text_point">SVN</span> and{" "}
+              <span className="text text_point">Git.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex-column">
+        <h3 className="sub_title bB bBBold">EDUCATION & TRAINING</h3>
+        <div className="pT20">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">[IZEN Academy Deduction]</p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row ">
+            <p className="flex_1 text flex-column">
+              Frontend Developer (React, JavaScript)
+              <span className="fontItalic">07/2023 - 09/2023</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Built interactive UIs with{" "}
+              <span className="text text_point">
+                JavaScript class-based OOP
+              </span>
+              (Object-Oriented Programming) and{" "}
+              <span className="text text_point">GSAP</span>(GreenSock Animation
+              Platform) animations. Followed{" "}
+              <span className="text text_point">KWCAG</span>(Korea Web Content
+              Accessibility Guidelines) web accessibility guidelines and
+              responsive design principles.
+            </p>
+          </div>
+        </div>
+        <div className="pT50">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">[Green Computer Academy]</p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row">
+            <p className="flex_1 text flex-column">
+              UI/UX Responsive Web Publisher
+              <span className="fontItalic">12/2021 - 04/2022</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Learned core React concepts,{" "}
+              <span className="text text_point">Redux, React Router</span>, and
+              server communication.
+            </p>
+          </div>
+        </div>
+        <div className="pT50">
+          <div className="flex-row space-between pB10">
+            <p className="text text_point">[BITCAMP]</p>
+            <p className="text text_v3 text_point">South Korea</p>
+          </div>
+          <div className="flex-row">
+            <p className="flex_1 text flex-column">
+              UI/UX Responsive Web Publisher
+              <span className="fontItalic">12/2019 - 06/2020</span>
+            </p>
+            <p className="flex_1 text text_heightNormal text_spacingNormal">
+              Focused on Java/JS-based web backend and frontend with{" "}
+              <span className="text text_point">RESTful API</span>
+              integration.
+            </p>
           </div>
         </div>
       </div>
