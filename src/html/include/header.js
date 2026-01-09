@@ -51,28 +51,32 @@ function Header() {
       {/*상단영역 시작*/}
       <header className="header_main">
         <h2 className="title">SUJI HONG</h2>
-        <div className="txtBox">
-          <p>Toronto, ON, CA</p>
-          <p>E. 1999ssu@gmail.com</p>
-          <p>T. (778) 714-1282</p>
-          <p>
-            LinkedIn.{" "}
-            <a href="https://www.linkedin.com/in/suji-hong-137ab5343/">
-              https://www.linkedin.com/in/suji-hong-137ab5343/
-            </a>
-          </p>
-          <p>
-            Portfolio.{" "}
-            <a href="https://cat-box-6b041.web.app/">
-              https://cat-box-6b041.web.app/
-            </a>
-          </p>
-          <p>
-            Git.{" "}
-            <a href="https://github.com/gtnwl/portfolio">
-              https://github.com/gtnwl/portfolio
-            </a>
-          </p>
+        <div className="bB pTB20 w100">
+          <div className="txtBox pB10">
+            <p>Toronto, ON, CA</p>
+            <p>E. 1999ssu@gmail.com</p>
+            <p>T. (778) 714-1282</p>
+          </div>
+          <div className="txtBox">
+            <p>
+              LinkedIn.{" "}
+              <a href="https://www.linkedin.com/in/suji-hong-137ab5343/">
+                https://www.linkedin.com/in/suji-hong-137ab5343/
+              </a>
+            </p>
+            <p>
+              Portfolio.{" "}
+              <a href="https://cat-box-6b041.web.app/">
+                https://cat-box-6b041.web.app/
+              </a>
+            </p>
+            <p>
+              Git.{" "}
+              <a href="https://github.com/gtnwl/portfolio">
+                https://github.com/gtnwl/portfolio
+              </a>
+            </p>
+          </div>
         </div>
       </header>
       {/*상단영역 끝*/}

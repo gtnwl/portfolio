@@ -99,7 +99,15 @@ a {
 //     visibility: hidden;
 //   }
 // }
+//width
+
+.w100 {
+  width: 100%;
+}
 /*padding,margin*/
+.pTB20 {
+  padding: 20px 0px;
+}
 .pTB50 {
   padding: 50px 0px;
   box-sizing: border-box;
@@ -120,6 +128,9 @@ a {
 }
 .pT80 {
   padding-top: 80px;
+}
+.pB10 {
+  padding-bottom: 10px;
 }
 .pB22 {
   padding-bottom: 22px;
@@ -179,6 +190,11 @@ a {
   display: grid;
   place-items: center;
 }
+
+//border
+.bB {
+  border-bottom: solid 1px black;
+}
 /*상단영역 시작*/
 
 .header_sub {
@@ -199,10 +215,7 @@ a {
   .txtBox {
     width: 100%;
     display: flex;
-    padding: 20px 0px;
     justify-content: center;
-    border-bottom: solid 1px black;
-
     p {
       font-size: 20px;
       padding: 0px 10px;
