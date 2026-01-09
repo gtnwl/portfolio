@@ -49,76 +49,32 @@ function Header() {
       </ul>*/}
       {/* 바로가기 메뉴 끝*/}
       {/*상단영역 시작*/}
-      <div className="header_wrap">
-        <header className="header_main border-center gap40">
-          {/* <div className="top">
-            <p className="date title title_small_v2" data-widget="date">
-              <span className="day">Wednesday,</span>
-              <span className="month">January 11,</span>
-              <span className="year">2023</span>
-            </p>
-          </div> */}
-          <div className="left">
-            <div className="imgBox">
-              <img
-                src={require("../../resources/images/icon/icon_me.png")}
-                alt="me"
-              />
-            </div>
-            <div className="txtBox">
-              <h1 className="title textLeft mT30">SUJI HONG</h1>
-              <p className="textLeft fontSize22">
-                I have 2 years of experience as a frontend developer, building
-                user-friendly and visually appealing websites. Before that, I
-                worked as a web publisher for a year, focusing on website
-                development and optimization.
-              </p>
-            </div>
-          </div>
-          <ul className="right">
-            <li className="list">
-              <p className="title">ADDRESS.</p>
-              <p className="text_v5">99 wheat boom drive Oakville, L6H 0M9</p>
-            </li>
-            <li className="list">
-              <p className="title">EMAIL.</p>
-              <p className="text_v5">
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=1999ssu@gmail.com">
-                  1999ssu@gmail.com (Click to email me!)
-                </a>
-              </p>
-            </li>
-            <li className="list">
-              <p className="title">TEL.</p>
-              <p className="text_v5">(778) 714-1282</p>
-            </li>
-            <li className="list">
-              <p className="title">VISA TYPE.</p>
-              <p className="text_v5">Working Holiday </p>
-            </li>
-            <li className="list">
-              <p className="title">VISA DURATION.</p>
-              <p className="text_v5">Feb 26, 2025 – Feb 25, 2027</p>
-            </li>
-            <li className="list">
-              <p className="title">GIT HUB.</p>
-              <p className="text_v5">
-                <a href="https://github.com/gtnwl/portfolio">
-                  https://github.com/gtnwl/portfolio
-                </a>
-              </p>
-            </li>
-            <li className="list">
-              <p className="title">PORTFOLIO.</p>
-              <p className="text_v5">
-                <a href="https://cat-box-6b041.web.app/">
-                  https://cat-box-6b041.web.app/
-                </a>
-              </p>
-            </li>
-          </ul>
-        </header>
-      </div>
+      <header className="header_main">
+        <h2 className="title">SUJI HONG</h2>
+        <div className="txtBox">
+          <p>Toronto, ON, CA</p>
+          <p>E. 1999ssu@gmail.com</p>
+          <p>T. (778) 714-1282</p>
+          <p>
+            LinkedIn.{" "}
+            <a href="https://www.linkedin.com/in/suji-hong-137ab5343/">
+              https://www.linkedin.com/in/suji-hong-137ab5343/
+            </a>
+          </p>
+          <p>
+            Portfolio.{" "}
+            <a href="https://cat-box-6b041.web.app/">
+              https://cat-box-6b041.web.app/
+            </a>
+          </p>
+          <p>
+            Git.{" "}
+            <a href="https://github.com/gtnwl/portfolio">
+              https://github.com/gtnwl/portfolio
+            </a>
+          </p>
+        </div>
+      </header>
       {/*상단영역 끝*/}
     </>
   );

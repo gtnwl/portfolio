@@ -1,15 +1,9 @@
 .container {
   &.index {
-    border: solid 8px $point-color;
-    border-radius: 25px;
-    padding: 40px;
-    box-sizing: border-box;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 50px;
+    box-sizing: border-box;
     position: relative;
-    background-size: 300px 300px;
-    background-repeat: repeat;
   }
 }
 
@@ -17,13 +11,13 @@
   margin-top: 40px;
 }
 
-.contents {
-  &.index {
-    + * {
-      border-top: solid 1px $border-color;
-    }
-  }
-}
+// .contents {
+//   &.index {
+//     + * {
+//       border-top: solid 1px $border-color;
+//     }
+//   }
+// }
 
 .btnBox.contact {
   text-align: center;

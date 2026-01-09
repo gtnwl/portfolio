@@ -34,12 +34,15 @@
   }
 }
 .title {
+  width: 100%;
   font-family: $agencyFB !important;
-  color: $point-color;
   font-size: 60px;
   transition: 0.3s ease;
   line-height: normal;
-
+  border-bottom: solid 1px black;
+  letter-spacing: 6px;
+  text-align: center;
+  padding-bottom: 10px;
   &_small_v1 {
     font-size: 32px; //32px
     letter-spacing: 1px;
